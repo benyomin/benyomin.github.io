@@ -18,11 +18,10 @@ Imports:
     ggplot2,
     foreign,
     Hmisc,
-    tidyr,
-    lazyeval
-RoxygenNote: 5.0.1
+    tidyr
 Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
 Collate:
+ 'latexFromR.R'
