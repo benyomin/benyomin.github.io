@@ -1,0 +1,25 @@
+---
+title: "functional"
+output: html_notebook
+---
+
+```{r}
+#list of functions with lapply()
+
+x <- 1:10
+funs <- list(
+  sum=sum,
+  mean = mean,
+  median = median)
+lapply(funs,function(f) f(x))
+
+```
+```{r}
+funs2<-list(
+    sum = function(x,...)sum(x, ...,na.rm=TRUE),
+    mean= function(x,...)mean(x,...,na.rm=TRUE),
+    median=function(x,...)median(x,...,na.rm=TRUE))
+lapply(funs2,function(f) f(x))
+)
+```
+
