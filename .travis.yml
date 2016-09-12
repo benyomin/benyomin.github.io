@@ -4,7 +4,7 @@ cache: packages
 pandoc_version: 1.17
 language: r
 
-sudo: false
+sudo: TRUE
 cache: packages
 warnings_are_errors: false
 before_script: /bin/bash gh-publisher-scripts/gh-publisher.sh
