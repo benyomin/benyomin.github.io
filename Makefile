@@ -3,18 +3,18 @@ all: pdf
 clean:
 	@rm -f *.aux *.log *.dvi *.bbl *.blg *.out *.toc review.pdf
 
-pdf: review.pdf
+pdf: marko.pdf
 
-review.pdf: review.tex
-	pdflatex review.tex
-	pdflatex review.tex
-# 	bibtex review
-# 	pdflatex review.tex
-	pdflatex review.tex
+marko.: marko.tex
+	pdflatex marko.tex
+	pdflatex marko.tex
+ 	bibtex marko
+# 	pdflatex marko.tex
+	pdflatex marko.tex
 
 # review.pdf: review.dvi
 # 	dvipdf review.dvi
 
-figures.pdf: figures.tex
-	pdflatex figures.tex
-	pdflatex figures.tex
+#figures.pdf: figures.tex
+#	pdflatex figures.tex
+#	pdflatex figures.tex

@@ -3,8 +3,8 @@
 #
 # You have the following variables available:
 #
-# GH_PUBLISHER_PROJECT_DIR - The root of your project repository.
-# GH_PUBLISHER_SCRIPTS_DIR - The gh-publisher-scripts directory.
+GH_PUBLISHER_PROJECT_DIR - "/Users/AbuDavid/personal/benyomin"
+GH_PUBLISHER_SCRIPTS_DIR - "/Users/AbuDavid/personal/benyomin"
 #
 # The current working directory is $GH_PUBLISHER_PROJECT_DIR.
 #
