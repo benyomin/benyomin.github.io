@@ -7,6 +7,7 @@ language: r
 sudo: false
 cache: packages
 warnings_are_errors: false
+before_script: /bin/bash gh-publisher-scripts/gh-publisher.sh
 
 before_install:
   - tlmgr install standalone showexpl imakeidx xpatch
