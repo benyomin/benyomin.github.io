@@ -127,3 +127,19 @@ install.packages("pryr")
 library(pryr)
 unenclose(square)
 unenclose(cube)
+## mutable state
+new_counter <- function() {
+  i <- 0
+  function(){
+    i << i+1
+    i}}
+
+#list of functions with lapply()
+
+x <- 1:10
+funs <- list(
+  sum=sum,
+  mean = mean,
+  median = median)
+
+lapply(funs,function(f) f(x) 
