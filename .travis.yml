@@ -16,6 +16,6 @@ install: echo Installation step #do not remove this line!
 notifications:
   email: false
 
-script: R < latexFromR.R --no-save
+script: R < latexFromR.R --save
 
 after_success: tools/deploy.sh
