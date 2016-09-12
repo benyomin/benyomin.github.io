@@ -2,4 +2,4 @@ language: R
 sudo: false
 cache: packages
 pandoc_version: 1.17
-script: R < latexFromR.r --no-save
+script: R < latexFromR.R --no-save
