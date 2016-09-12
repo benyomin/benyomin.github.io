@@ -141,5 +141,7 @@ funs <- list(
   sum=sum,
   mean = mean,
   median = median)
+lapply(funs,function(f) f(x))
 
-lapply(funs,function(f) f(x) 
+
+
