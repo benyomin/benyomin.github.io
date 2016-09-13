@@ -1,29 +1,8 @@
 language: R
-sudo: false
 cache: packages
 pandoc_version: 1.17
-language: r
-
-sudo: TRUE
-cache: packages
-warnings_are_errors: false
-before_script: /bin/bash gh-publisher-scripts/gh-publisher.sh
-
-before_install:
-   - yes "" | sudo apt-add-repository ppa:texlive-backports/ppa
-   - sudo apt-get update -y
-   - sudo apt-get install -y
-     inkscape
-     texlive-fonts-recommended
-     texlive-latex-extra
-     texlive-latex-recommended
-     texlive-xetex
-
 install: echo Installation step #do not remove this line!
-
 notifications:
   email: false
-
 script: R < latexFromR.R --save
-
 after_success: tools/deploy.sh

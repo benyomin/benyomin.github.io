@@ -1,16 +1,16 @@
-all: pdf
+# all: pdf
 
-clean:
-	@rm -f *.aux *.log *.dvi *.bbl *.blg *.out *.toc review.pdf
+# clean:
+# 	@rm -f *.aux *.log *.dvi *.bbl *.blg *.out *.toc review.pdf
 
-pdf: marko.pdf
+# pdf: marko.pdf
 
-marko.: marko.tex
-	pdflatex marko.tex
-	pdflatex marko.tex
- 	bibtex marko
+# marko.: marko.tex
 # 	pdflatex marko.tex
-	pdflatex marko.tex
+# 	pdflatex marko.tex
+#  	bibtex marko
+# # 	pdflatex marko.tex
+# 	pdflatex marko.tex
 
 # review.pdf: review.dvi
 # 	dvipdf review.dvi
@@ -18,3 +18,4 @@ marko.: marko.tex
 #figures.pdf: figures.tex
 #	pdflatex figures.tex
 #	pdflatex figures.tex
+$(info *****      make file executing      *****)
