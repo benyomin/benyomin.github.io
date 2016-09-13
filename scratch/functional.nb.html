@@ -192,18 +192,53 @@ $median
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGFwcGx5KGZ1bnMyLGZ1bmN0aW9uKGYpIGYoeCkpXG5cbmBgYCJ9 -->
-<pre class="r"><code>lapply(funs2,function(f) f(x))
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZnVuczI8LWxpc3QoXG4gICAgc3VtID0gZnVuY3Rpb24oeCwuLi4pc3VtKHgsIC4uLixuYS5ybT1UUlVFKSxcbiAgICBtZWFuPSBmdW5jdGlvbih4LC4uLiltZWFuKHgsLi4uLG5hLnJtPVRSVUUpLFxuICAgIG1lZGlhbj1mdW5jdGlvbih4LC4uLiltZWRpYW4oeCwuLi4sbmEucm09VFJVRSkpXG5sYXBwbHkoZnVuczIsZnVuY3Rpb24oZikgZih4KSlcbmBgYCJ9 -->
+<pre class="r"><code>funs2&lt;-list(
+    sum = function(x,...)sum(x, ...,na.rm=TRUE),
+    mean= function(x,...)mean(x,...,na.rm=TRUE),
+    median=function(x,...)median(x,...,na.rm=TRUE))
+lapply(funs2,function(f) f(x))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gbGFwcGx5KGZ1bnMyLCBmdW5jdGlvbihmKSBmKHgpKSA6IG9iamVjdCAnZnVuczInIG5vdCBmb3VuZFxuIn0= -->
-<pre><code>Error in lapply(funs2, function(f) f(x)) : object 'funs2' not found</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiJHN1bVxuWzFdIDU1XG5cbiRtZWFuXG5bMV0gNS41XG5cbiRtZWRpYW5cblsxXSA1LjVcbiJ9 -->
+<pre><code>$sum
+[1] 55
+
+$mean
+[1] 5.5
+
+$median
+[1] 5.5</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBtYWtlIGEgdmlnbmV0dGVcbiNodHRwOi8vcm1mbGlnaHQuZ2l0aHViLmlvL3Bvc3RzLzIwMTQvMDcvdmlnbmV0dGVBbmFseXNpcy5odG1sXG5saWJyYXJ5KGRldnRvb2xzKVxuY3JlYXRlKFwifi9zY3JhdGNoL3Byb2plY3RzL2lzbWJUd2VldEFuYWx5c2lzXCIpXG5gYGAifQ== -->
+<pre class="r"><code># make a vignette
+#http://rmflight.github.io/posts/2014/07/vignetteAnalysis.html
+library(devtools)
+create(&quot;~/scratch/projects/ismbTweetAnalysis&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQ3JlYXRpbmcgcGFja2FnZSAnaXNtYlR3ZWV0QW5hbHlzaXMnIGluICcvVXNlcnMvQWJ1RGF2aWQvc2NyYXRjaC9wcm9qZWN0cydcbk5vIERFU0NSSVBUSU9OIGZvdW5kLiBDcmVhdGluZyB3aXRoIHZhbHVlczpcbiJ9 -->
+<pre><code>Creating package 'ismbTweetAnalysis' in '/Users/AbuDavid/scratch/projects'
+No DESCRIPTION found. Creating with values:</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUGFja2FnZTogaXNtYlR3ZWV0QW5hbHlzaXNcblRpdGxlOiBXaGF0IHRoZSBQYWNrYWdlIERvZXMgKG9uZSBsaW5lLCB0aXRsZSBjYXNlKVxuVmVyc2lvbjogMC4wLjAuOTAwMFxuQXV0aG9yc0BSOiBwZXJzb24oXCJGaXJzdFwiLCBcIkxhc3RcIiwgZW1haWwgPSBcImZpcnN0Lmxhc3RAZXhhbXBsZS5jb21cIiwgcm9sZSA9IGMoXCJhdXRcIiwgXCJjcmVcIikpXG5EZXNjcmlwdGlvbjogV2hhdCB0aGUgcGFja2FnZSBkb2VzIChvbmUgcGFyYWdyYXBoKS5cbkRlcGVuZHM6IFIgKD49IDMuMy4xKVxuTGljZW5zZTogV2hhdCBsaWNlbnNlIGlzIGl0IHVuZGVyP1xuRW5jb2Rpbmc6IFVURi04XG5MYXp5RGF0YTogdHJ1ZVxuIn0= -->
+<pre><code>Package: ismbTweetAnalysis
+Title: What the Package Does (one line, title case)
+Version: 0.0.0.9000
+Authors@R: person(&quot;First&quot;, &quot;Last&quot;, email = &quot;first.last@example.com&quot;, role = c(&quot;aut&quot;, &quot;cre&quot;))
+Description: What the package does (one paragraph).
+Depends: R (&gt;= 3.3.1)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiKiBDcmVhdGluZyBgaXNtYlR3ZWV0QW5hbHlzaXMuUnByb2pgIGZyb20gdGVtcGxhdGUuXG4qIEFkZGluZyBgLlJwcm9qLnVzZXJgLCBgLlJoaXN0b3J5YCwgYC5SRGF0YWAgdG8gLi8uZ2l0aWdub3JlXG4ifQ== -->
+<pre><code>* Creating `ismbTweetAnalysis.Rproj` from template.
+* Adding `.Rproj.user`, `.Rhistory`, `.RData` to ./.gitignore</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiZnVuY3Rpb25hbCIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CiNsaXN0IG9mIGZ1bmN0aW9ucyB3aXRoIGxhcHBseSgpCgp4IDwtIDE6MTAKZnVucyA8LSBsaXN0KAogIHN1bT1zdW0sCiAgbWVhbiA9IG1lYW4sCiAgbWVkaWFuID0gbWVkaWFuKQpsYXBwbHkoZnVucyxmdW5jdGlvbihmKSBmKHgpKQoKYGBgCmBgYHtyfQpmdW5zMjwtbGlzdCgKICAgIHN1bSA9IGZ1bmN0aW9uKHgsLi4uKXN1bSh4LCAuLi4sbmEucm09VFJVRSksCiAgICBtZWFuPSBmdW5jdGlvbih4LC4uLiltZWFuKHgsLi4uLG5hLnJtPVRSVUUpLAogICAgbWVkaWFuPWZ1bmN0aW9uKHgsLi4uKW1lZGlhbih4LC4uLixuYS5ybT1UUlVFKSkKbGFwcGx5KGZ1bnMyLGZ1bmN0aW9uKGYpIGYoeCkpCikKYGBgCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiZnVuY3Rpb25hbCIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CiNsaXN0IG9mIGZ1bmN0aW9ucyB3aXRoIGxhcHBseSgpCgp4IDwtIDE6MTAKZnVucyA8LSBsaXN0KAogIHN1bT1zdW0sCiAgbWVhbiA9IG1lYW4sCiAgbWVkaWFuID0gbWVkaWFuKQpsYXBwbHkoZnVucyxmdW5jdGlvbihmKSBmKHgpKQoKYGBgCmBgYHtyfQpmdW5zMjwtbGlzdCgKICAgIHN1bSA9IGZ1bmN0aW9uKHgsLi4uKXN1bSh4LCAuLi4sbmEucm09VFJVRSksCiAgICBtZWFuPSBmdW5jdGlvbih4LC4uLiltZWFuKHgsLi4uLG5hLnJtPVRSVUUpLAogICAgbWVkaWFuPWZ1bmN0aW9uKHgsLi4uKW1lZGlhbih4LC4uLixuYS5ybT1UUlVFKSkKbGFwcGx5KGZ1bnMyLGZ1bmN0aW9uKGYpIGYoeCkpCgojIG1ha2UgYSB2aWduZXR0ZQojaHR0cDovL3JtZmxpZ2h0LmdpdGh1Yi5pby9wb3N0cy8yMDE0LzA3L3ZpZ25ldHRlQW5hbHlzaXMuaHRtbApsaWJyYXJ5KGRldnRvb2xzKQpjcmVhdGUoIn4vc2NyYXRjaC9wcm9qZWN0cy9pc21iVHdlZXRBbmFseXNpcyIpCgoKYGBgCgo=</div>
 
 
 

@@ -20,6 +20,12 @@ funs2<-list(
     mean= function(x,...)mean(x,...,na.rm=TRUE),
     median=function(x,...)median(x,...,na.rm=TRUE))
 lapply(funs2,function(f) f(x))
-)
+
+# make a vignette
+#http://rmflight.github.io/posts/2014/07/vignetteAnalysis.html
+library(devtools)
+create("~/scratch/projects/ismbTweetAnalysis")
+
+
 ```
 

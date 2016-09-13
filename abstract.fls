@@ -1,0 +1,13 @@
+PWD /Users/AbuDavid/OneDrive - post.bgu.ac.il/personal/benyomin
+INPUT /usr/local/texlive/2016/texmf.cnf
+INPUT /usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt
+INPUT abstract.tex
+OUTPUT abstract.log
+INPUT ar2e.cls
+INPUT ar2e.cls
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT abstract.aux
+INPUT abstract.aux
+OUTPUT abstract.aux
