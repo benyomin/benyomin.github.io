@@ -1,8 +1,8 @@
 language: R
 cache: packages
 pandoc_version: 1.17
-before_install: - sudo apt-get -qq update
-                - sudo apt-get install -y texlive-base texlive-bibtex-extra libxml2-dev texlive-latex-extra texlive-fonts-extra texlive-latex-recommended
+before_install: - wget https://github.com/yihui/ubuntu-bin/releases/download/latest/texlive-local.deb
+                - sudo dpkg -i texlive-local.deb
 install: echo Installation step #do not remove this line!
 notifications:
   email: false

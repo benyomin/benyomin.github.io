@@ -96,8 +96,8 @@ Some prices changes in some assets may be viewed as transitory, others may be ha
 
                ## Methodology
 This research is being conducted in the interdisciplinary field of Israel Studies. It lies at the intersection of sociology and economics.
-              It partially adheres to the practices of reproducible research, i.e. methods are fully reported and the process by which raw data is anaylzed is viewable. Unfortunately, while the housing price data is freely distributable, the household level data from the Expenditure Survey was obtained by special liscence with a no-redistribute clause. The data is available from the Central Bureau of Statistics or through 
-                  Finally! The exciting methodology section!
+              It partially adheres to the practices of reproducible research, i.e. methods are fully reported and the process by which raw data is anaylzed is viewable. Unfortunately, while the housing price data is freely distributable, the household level data from the Expenditure Survey was obtained by special liscence with a no-redistribute clause. The data is available for a fee from the Central Bureau of Statistics or for no cost to University partners through the Israel Social Sciences Data Center. Thus, the methodology is fully reproducible after obtaining the listed datasets.
+ Pseudo-panel construction is the methodology by which I propose to combine the available data on household consumption and house prices.
                
                 
         
