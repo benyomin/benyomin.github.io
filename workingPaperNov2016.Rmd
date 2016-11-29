@@ -92,6 +92,12 @@ Some prices changes in some assets may be viewed as transitory, others may be ha
        However, there is evidence for widespread use by investors of strawbuyers to evade the restriction. Thus, young families are still squeezed out of the market and the government forgoes revenue from land sales while benefiting investors.
        An important factor that reduces the supply of housing by increasing permitting times for new construction is the lack of municipally determined property tax rates. New residential units add an additional burden on city infrastructure and do not pay for themselves in terms of the taxes they generate. Wealthier districts make up the short fall through taxes on commercial property. Poorer localities throw up additional barriers to delay the construction of apartments until they are promised balance grants by the Ministry of Interior.
           Rental income up to 5,080 NIS per month is tax exempt, this provides a further incentive to invest in real estate and drive out first time buyers.[@gruber2015comments]
+      Although Gruber's reasoning suggests taxing all rental income and allowing municipalities to set property tax rates as means to reduce demand by investors and increase supply by reducing permitting delays, the purpuse of the current study is neither to study the causes nor remedies for the market clearing price in the housing market. Instead, I take this price as it is recorded and see how changes in housing prices correlate to changes in household consumption of non-housing goods.
+
+               ## Methodology
+
+                  Finally! The exciting methodology section!
+               
                 
         
 ## the wealth effect, or wealth effects?
