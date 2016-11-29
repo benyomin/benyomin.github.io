@@ -1,6 +1,7 @@
 language: R
 cache: packages
 pandoc_version: 1.17
+before_install: -sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-fonts-extra texlive-latex-recommended
 install: echo Installation step #do not remove this line!
 notifications:
   email: false

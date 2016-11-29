@@ -88,8 +88,11 @@ Some prices changes in some assets may be viewed as transitory, others may be ha
 ### the Israeli housing market
 #### /Mechir Lamistaken/ - The Israeli firsttime homebuyers program
         Finance Minister Moshe Kahlon has a plan to deal with the excess demand in the housing market caused by real estate speculators who would own one apartment and still buy one or more others as rental property.
-        The Mechir Lamistaken sells land to developers at a below market rate if the housing is reserved for first-time buyers.
-       
+        The Mechir Lamistaken program sells land to developers at a below market rate if the housing is reserved for first-time buyers.
+       However, there is evidence for widespread use by investors of strawbuyers to evade the restriction. Thus, young families are still squeezed out of the market and the government forgoes revenue from land sales while benefiting investors.
+       An important factor that reduces the supply of housing by increasing permitting times for new construction is the lack of municipally determined property tax rates. New residential units add an additional burden on city infrastructure and do not pay for themselves in terms of the taxes they generate. Wealthier districts make up the short fall through taxes on commercial property. Poorer localities throw up additional barriers to delay the construction of apartments until they are promised balance grants by the Ministry of Interior.
+          Rental income up to 5,080 NIS per month is tax exempt, this provides a further incentive to invest in real estate and drive out first time buyers.[@gruber2015comments]
+                
         
 ## the wealth effect, or wealth effects?
 This study combines household level consumption data with housing price data to estimate test the hypothesis that different age cohorts have different wealth effects. It has been postulated that older households will have a higher wealth effect, or larger proportional change in spending in response to a change in wealth than a younger household. The available consumption data from the Household Expenditure Survey provides us with a means to test this hypothesis.
