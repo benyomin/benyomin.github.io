@@ -17,7 +17,7 @@ output:
       in_header: preamble.tex
     keep_tex: yes
     number_sections: yes
-    citation_package: biblatex
+    citation_package: biblatex 
 
 ---
 
@@ -77,7 +77,8 @@ Another factor affecting consumption is the wealth effect. When the wealth of a 
 Many households around the world store a majority of their wealth in housing.
 <!--- 40% of household wealth in the US is held as housing assets.[@Sheiner_1995] -->
  This, combined with the volatility of swings in house prices, has caused academics and policy to further investigate the housing wealth effect and its implications for GDP.[@Gan2010] Renters and owners should be effected differently by a change in housing prices. Research using Japanese data showed that renters fell into two categories when faced with increased housing prices. Some gave up saving for a housing and instead increased consumption of luxury goods in what was termed the "consumption of despair." The other group decreased consumption, and increased their savings rate, still dreaming of home ownership. These effects on renters were subsequently found in data from Canada and San Francisco.[@Sheiner_1995]
-        
+        The data used in the proposed study should allow me to measure the extent to which Israeli renters engaged in consumption of despair over the last fourteen years.
+            
                   
                     
 ## the wealth effect, or wealth effects?
