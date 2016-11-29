@@ -5,6 +5,10 @@
 ##   Not making .tex with R
 ## minimal example
 install.packages("knitr")
+install.packages("devtools")
+library(devtools)
+install.packages("RCurl")
+library(RCurl)
 library(knitr)
 source("./updatePackage.R",echo=FALSE)
 knit('workingPaperNov2016.Rmd')
