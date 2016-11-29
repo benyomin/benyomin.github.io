@@ -3,3 +3,6 @@
 ##                           texinputs = NULL, index = TRUE)
 
 ##   Not making .tex with R
+## minimal example
+library(knitr)
+knit('001-minimal.Rmd')
