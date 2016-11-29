@@ -73,7 +73,9 @@ The MPC can be affected by the interest rate, rising interest rates incentivize 
 With a constant MPC a household can increase consumption due to increased income from a salary increase, hourly wage increase or increase in the number of hours worked. Household consumption would fall due a decrease in salary, wages or working hours.
 A further factor in consumption is expected future income. This posits that the rational consumer increases their consumption now if they know that they will get a raise or some overtime next week. They will also reduce consumption and increase savings now when they expect future unemployment or wage reductions. 
 Another factor affecting consumption is the wealth effect. When the wealth of a household increases (the price of shares held in an investment portfolio, the price of Picasso on the wall or in a vault, the price of the family home or rental property), household consumption increases, in effect spending now some of the expected future gains on the sale of the shares, painting or real estate. Conversely, a decline in household wealth should produce a decline in household consumption and GDP.
-
+## Literature Review
+Many households around the world store a majority of their wealth in housing.
+%40% of household wealth in the US is held as housing assets.[@Sheiner_1995] This, combined with the volatility of swings in house prices, has caused academics and policy to further investigate the housing wealth effect and its implications for GDP.[@Gan2010]
 ## the wealth effect, or wealth effects?
 This study combines household level consumption data with housing price data to estimate test the hypothesis that different age cohorts have different wealth effects. It has been postulated that older households will have a higher wealth effect, or larger proportional change in spending in response to a change in wealth than a younger household. The available consumption data from the Household Expenditure Survey provides us with a means to test this hypothesis.
 ```{r FigureOne, fig.cap="I wrote this.", echo=TRUE, message=FALSE, warning=FALSE}
