@@ -4,6 +4,6 @@
 
 ##   Not making .tex with R
 ## minimal example
-packages.install("knitr")
+install.packages("knitr")
 library(knitr)
 knit('001-minimal.Rmd')
