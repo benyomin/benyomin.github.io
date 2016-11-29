@@ -95,7 +95,8 @@ Some prices changes in some assets may be viewed as transitory, others may be ha
       Although Gruber's reasoning suggests taxing all rental income and allowing municipalities to set property tax rates as means to reduce demand by investors and increase supply by reducing permitting delays, the purpuse of the current study is neither to study the causes nor remedies for the market clearing price in the housing market. Instead, I take this price as it is recorded and see how changes in housing prices correlate to changes in household consumption of non-housing goods.
 
                ## Methodology
-
+This research is being conducted in the interdisciplinary field of Israel Studies. It lies at the intersection of sociology and economics.
+              It partially adheres to the practices of reproducible research, i.e. methods are fully reported and the process by which raw data is anaylzed is viewable. Unfortunately, while the housing price data is freely distributable, the 
                   Finally! The exciting methodology section!
                
                 
