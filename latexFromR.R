@@ -6,4 +6,5 @@
 ## minimal example
 install.packages("knitr")
 library(knitr)
+source("./updatePackage.R'',echo=FALSE)
 knit('workingPaperNov2016.Rmd')
