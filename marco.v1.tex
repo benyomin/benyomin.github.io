@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage[natbibapa]{apacite}
+\usepackage[american]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\author{Joe Por Ejemplo}
+\usepackage{graphicx}   % allows for graphic to float when doing jou or doc style
+\usepackage{verbatim}   % allows us to use \begin{comment} environment
+\usepackage{caption}
+%\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{url}
+
+\title{a modest proposal}
+\usepackage{Sweave}
+\begin{document}
+\input{master-concordance}
+\maketitle
+
+\section{Overview}
+This is the overview. It is in the file master.Rnw.  I am a Lit Review I say many things, good for me!!
+Rnw with bibliography and citations workflow from: http://www.contrib.andrew.cmu.edu/~enmccorm/blog/?p=83
+
+Also, you can still print code chunks:
+\begin{Schunk}
+\begin{Sinput}
+> x <- 3
+> y <- 4
+> print(x + y)
+\end{Sinput}
+\begin{Soutput}
+[1] 7
+\end{Soutput}
+\end{Schunk}
+
+\section{Further}  Johnson included many footcites in his important paper.\cite{Lin++2008}
+
+% !Rnw root = Master.Rnw
+
+\section{Analysis}
+This is the analysis.
+
+\begin{Schunk}
+\begin{Sinput}
+> summary(cars)
+\end{Sinput}
+\begin{Soutput}
+     speed           dist       
+ Min.   : 4.0   Min.   :  2.00  
+ 1st Qu.:12.0   1st Qu.: 26.00  
+ Median :15.0   Median : 36.00  
+ Mean   :15.4   Mean   : 42.98  
+ 3rd Qu.:19.0   3rd Qu.: 56.00  
+ Max.   :25.0   Max.   :120.00  
+\end{Soutput}
+\begin{Sinput}
+> plot(cars)
+\end{Sinput}
+\end{Schunk}
+\nocite{*}
+\bibliographystyle{apacite}
+\bibliography{references}
+
+\end{document}
