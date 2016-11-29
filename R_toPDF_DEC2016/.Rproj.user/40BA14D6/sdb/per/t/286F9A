@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Our great idea\"\nauthor: \"Helen of Troy and Genghis Khan\"\nfontsize: 11pt\npapersize: a4\nfontfamily: kpfonts\nbibliography: references.bib\nbiblio-style: authoryear-comp\nsubparagraph: true\ntoc: false\noutput: \n  bookdown::pdf_document2:\n    fig_caption: yes\n    fig_height: 5\n    fig_width: 8\n    includes:\n      in_header: preamble.tex\n    keep_tex: yes\n    number_sections: yes\n    citation_package: biblatex\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)\n# Make sure you have the latest version of rmarkdown and bookdown\n#devtools::install_github(\"rstudio/rmarkdown\")\n#devtools::install_github(\"rstudio/bookdown\")\nlibrary(ggplot2)\n```\n\n\\begin{abstract}\n A brief summary of our ideas\n\\end{abstract}\n\n\\begin{keywords}\n  blah, blah\n\\end{keywords}\n\n\\newpage\n\n#Introduction\n\nIn a famous paper, @BC64 introduced a family of transformations \\dots\n\n```{r histogram, fig.cap=\"Nice histogram\", message=FALSE, warning=FALSE}\nqplot(exp(rnorm(200)))\n```\n\nConsider the logNormal data plotted in Figure \\ref{fig:histogram}.\n\n",
+    "created" : 1472932344822.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4282357781",
+    "id" : "286F9A",
+    "lastKnownWriteTime" : 1472932346,
+    "last_content_update" : 1472932346767,
+    "path" : "~/OneDrive - post.bgu.ac.il/school/proposalR/altTemplate/Monashwp-rmd-template.Rmd",
+    "project_path" : "Monashwp-rmd-template.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
