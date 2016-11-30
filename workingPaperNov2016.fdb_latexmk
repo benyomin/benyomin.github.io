@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1480497390 "workingPaperNov2016.tex" "workingPaperNov2016.pdf" "workingPaperNov2016" 1480497390
+["pdflatex"] 1480498012 "workingPaperNov2016.tex" "workingPaperNov2016.pdf" "workingPaperNov2016" 1480498012
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -73,6 +73,7 @@
   "/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty" 1463608860 22417 1d9df1eb66848aa31b18a593099cf45c ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty" 1463608860 9581 023642318cef9f4677efe364de1e2a27 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/parskip/parskip.sty" 1285887441 2763 02a40cc5a32805c41d919cfbdba7e99a ""
+  "/usr/local/texlive/2016/texmf-dist/tex/latex/savesym/savesym.sty" 1378154216 2076 969b46b87cb8b982a532fc328300998e ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/titling/titling.sty" 1252107870 7358 95ac619994bd30d405a74f3eca431c84 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/tools/longtable.sty" 1454284088 12083 80916157594a8e4354985aaefae4f367 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/upquote/upquote.sty" 1334873510 1048 517e01cde97c1c0baf72e69d43aa5a2e ""
@@ -80,14 +81,14 @@
   "/usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf" 1470266149 31958 926ad82bc47ee89401cf24be7d2cbf7d ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1473686412 3873677 97051f94a3a4e8e98c0d41464d33411f ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "benyominwp.sty" 1480494668 6485 bd388110dac4e2413298babc6bbfc5af ""
+  "benyominwp.sty" 1480497992 6721 b8eea49a74ad5daaea998bc96b504a04 ""
   "kpfonts.sty" 1480497366 72843 e3ede77ae8fe9ac9e16b732726175fad ""
   "workingPaperNov2016.aux" 1480495033 3481 59a05bf376256932397f5b64d93bae10 ""
-  "workingPaperNov2016.tex" 1480497390 18175 8a2faf8348550cb2236a71f2b070eda0 ""
+  "workingPaperNov2016.tex" 1480498012 18175 8a2faf8348550cb2236a71f2b070eda0 ""
   (generated)
-  "workingPaperNov2016.pdf"
-  "workingPaperNov2016.bcf"
   "workingPaperNov2016.aux"
+  "workingPaperNov2016.pdf"
   "workingPaperNov2016.log"
-  "workingPaperNov2016.out"
+  "workingPaperNov2016.bcf"
   "workingPaperNov2016.run.xml"
+  "workingPaperNov2016.out"
