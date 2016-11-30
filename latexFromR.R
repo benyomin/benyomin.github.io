@@ -4,7 +4,9 @@
 ## version 0.3b1
 ##   Not making .tex with R
 ## minimal example
-install.packages("devtools")
+                                        #install.packages("devtools")
+source("./install_if_needed.R",echo=FALSE)
+install_if_needed("devtools")
 library(devtools)
 install_github("benyomin/censusFunctions")
 library(censusFunctions)

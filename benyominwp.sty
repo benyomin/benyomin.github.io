@@ -17,6 +17,7 @@
 
 %% CAPTIONS
 \RequirePackage{caption}
+\usepackage{savesym}
 \RequirePackage{amsmath}
 \DeclareCaptionStyle{italic}[justification=centering]
  {labelfont={bf},textfont={it},labelsep=colon}
@@ -24,7 +25,9 @@
 \captionsetup[table]{style=italic,format=hang,singlelinecheck=true}
 
 %% FONT
+\savesymbol{othertailQ}
 \RequirePackage{./kpfonts}  % should load local version now
+\restoresymbol{othertailQ}
 \RequirePackage[lf,t]{carlito}
 
 

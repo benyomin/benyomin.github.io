@@ -238,30 +238,30 @@
 %%% Other sc, other scsl
 %
     
-    \newcommand{\otherscshape}{%
-        \SiFonteContient{\fontname\the\font}{tt}{}{%
-          \SiFonteContient{\fontname\the\font}{ss}{\fontfamily{jkpss\kp@othersc\kp@flig\kp@style}}{%
-            \fontfamily{jkp\kp@famille\kp@othersc\kp@flig\kp@style}}}%
-        \fontshape{sc}\selectfont%
-          \ifkp@largesmallcaps\kp@largesmallcapsfalse\else\kp@largesmallcapstrue\fi%
-          \ifkp@largesmallcaps\def\kp@petitesmajuscules{k}\def\kp@othersc{}%
-            \else\def\kp@petitesmajuscules{}\def\kp@othersc{k}\fi}%
-    \newcommand{\textothersc}[1]{%
-      \begingroup%
-        \otherscshape#1%
-      \endgroup}
-    \newcommand{\otherscslshape}{%
-        \SiFonteContient{\fontname\the\font}{tt}{}{%
-          \SiFonteContient{\fontname\the\font}{ss}{\fontfamily{jkpss\kp@othersc\kp@flig\kp@style}}{%
-            \fontfamily{jkp\kp@famille\kp@othersc\kp@flig\kp@style}}}%
-        \fontshape{scsl}\selectfont%
-          \ifkp@largesmallcaps\kp@largesmallcapsfalse\else\kp@largesmallcapstrue\fi%
-          \ifkp@largesmallcaps\def\kp@petitesmajuscules{k}\def\kp@othersc{}%
-            \else\def\kp@petitesmajuscules{}\def\kp@othersc{k}\fi}%
-    \newcommand{\textotherscsl}[1]{%
-      \begingroup%
-        \otherscslshape#1%
-      \endgroup}
+  %%%    \newcommand{\otherscshape}{%
+    %%%      \SiFonteContient{\fontname\the\font}{tt}{}{%
+      %%%      \SiFonteContient{\fontname\the\font}{ss}{\fontfamily{jkpss\kp@othersc\kp@flig\kp@style}}{%
+        %%%      \fontfamily{jkp\kp@famille\kp@othersc\kp@flig\kp@style}}}%
+     %%%     \fontshape{sc}\selectfont%
+      %%%      \ifkp@largesmallcaps\kp@largesmallcapsfalse\else\kp@largesmallcapstrue\fi%
+  %%%          \ifkp@largesmallcaps\def\kp@petitesmajuscules{k}\def\kp@othersc{}%
+  %%%            \else\def\kp@petitesmajuscules{}\def\kp@othersc{k}\fi}%
+   %%%   \newcommand{\textothersc}[1]{%
+   %%%     \begingroup%
+     %%%     \otherscshape#1%
+    %%%    \endgroup}
+  %%%    \newcommand{\otherscslshape}{%
+    %%%      \SiFonteContient{\fontname\the\font}{tt}{}{%
+     %%%       \SiFonteContient{\fontname\the\font}{ss}{\fontfamily{jkpss\kp@othersc\kp@flig\kp@style}}{%
+      %%%        \fontfamily{jkp\kp@famille\kp@othersc\kp@flig\kp@style}}}%
+     %%%     \fontshape{scsl}\selectfont%
+        %%%    \ifkp@largesmallcaps\kp@largesmallcapsfalse\else\kp@largesmallcapstrue\fi%
+        %%%    \ifkp@largesmallcaps\def\kp@petitesmajuscules{k}\def\kp@othersc{}%
+         %%%     \else\def\kp@petitesmajuscules{}\def\kp@othersc{k}\fi}%
+ %%%   \newcommand{\textotherscsl}[1]{%
+  %%%    \begingroup%
+  %%%      \otherscslshape#1%
+  %%%    \endgroup}
 %
 %%% Other Q and other smallcap q tails
 %

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1480496655 "workingPaperNov2016.tex" "workingPaperNov2016.pdf" "workingPaperNov2016" 1480496655
+["pdflatex"] 1480497390 "workingPaperNov2016.tex" "workingPaperNov2016.pdf" "workingPaperNov2016" 1480497390
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -81,13 +81,13 @@
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1473686412 3873677 97051f94a3a4e8e98c0d41464d33411f ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
   "benyominwp.sty" 1480494668 6485 bd388110dac4e2413298babc6bbfc5af ""
-  "kpfonts.sty" 1282293542 72676 856b52ab339cd8bb2dd28d43225e99b5 ""
+  "kpfonts.sty" 1480497366 72843 e3ede77ae8fe9ac9e16b732726175fad ""
   "workingPaperNov2016.aux" 1480495033 3481 59a05bf376256932397f5b64d93bae10 ""
-  "workingPaperNov2016.tex" 1480496655 18175 8a2faf8348550cb2236a71f2b070eda0 ""
+  "workingPaperNov2016.tex" 1480497390 18175 8a2faf8348550cb2236a71f2b070eda0 ""
   (generated)
-  "workingPaperNov2016.aux"
-  "workingPaperNov2016.bcf"
-  "workingPaperNov2016.run.xml"
-  "workingPaperNov2016.out"
-  "workingPaperNov2016.log"
   "workingPaperNov2016.pdf"
+  "workingPaperNov2016.bcf"
+  "workingPaperNov2016.aux"
+  "workingPaperNov2016.log"
+  "workingPaperNov2016.out"
+  "workingPaperNov2016.run.xml"
