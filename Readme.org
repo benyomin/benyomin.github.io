@@ -1,3 +1,5 @@
 * Readme.org
+** this is not sourced on github, that file is README.md
+** TODO make the .md from this .org using pandoc on travis (priority: very low)
 ** this directory is stored on github.com/benyomin/workingDec
 *** it is public, be careful what you type or put here.
