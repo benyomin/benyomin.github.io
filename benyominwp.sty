@@ -16,8 +16,11 @@
 \geometry{a4paper, text={16cm,24cm}}
 
 %% CAPTIONS
+
+\usepackage{./kpfonts}  % should load local version now
+\usepackage{mathspec}
 \RequirePackage{caption}
-\usepackage{fontspec}
+%\usepackage{fontspec}
 \usepackage{savesym}
 \savesymbol{othertailQ}
 %\RequirePackage{amsmath}
@@ -32,7 +35,6 @@
 \savesymbol{othertailscslq}
 \savesymbol{othertailscq}
 
-\RequirePackage{./kpfonts}  % should load local version now
  \restoresymbol{othertailQ}
  \restoresymbol{othertailscq}
  \restoresymbol{othertailscslq}
@@ -57,7 +59,7 @@
 \renewcommand{\footrulewidth}{0pt}}
 
 %% MATHS
-\RequirePackage{bm,amsmath}
+%\RequirePackage{bm,amsmath}
 \allowdisplaybreaks
 
 %% GRAPHICS
@@ -179,7 +181,7 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath}
+%\usepackage{amsmath}
 \usepackage[showonlyrefs]{mathtools}
 \usepackage[no-weekday]{eukdate}
 
