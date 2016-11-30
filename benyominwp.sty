@@ -19,27 +19,23 @@
 \RequirePackage{caption}
 
 \usepackage{savesym}
-\RequirePackage{./kpfonts}  % should load local version now
 \savesymbol{othertailQ}
 \RequirePackage{amsmath}
-\restoresymbol{othertailQ}
 \DeclareCaptionStyle{italic}[justification=centering]
  {labelfont={bf},textfont={it},labelsep=colon}
 \captionsetup[figure]{style=italic,format=hang,singlelinecheck=true}
 \captionsetup[table]{style=italic,format=hang,singlelinecheck=true}
 
 %% FONT
-
-\savesymbol{othertailQ}
-
 \savesymbol{widering}
 \savesymbol{othertailscslq}
 \savesymbol{othertailscq}
-%% \restoresymbol{othertailQ}
-%% \restoresymbol{othertailscq}
-%% \restoresymbol{othertailscslq}
-%% \restoresymbol{widering}
 
+\RequirePackage{./kpfonts}  % should load local version now
+ \restoresymbol{othertailQ}
+ \restoresymbol{othertailscq}
+ \restoresymbol{othertailscslq}
+ \restoresymbol{widering}
 \RequirePackage[lf,t]{carlito}
 
 

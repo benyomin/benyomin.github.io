@@ -163,5 +163,7 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/savesym/savesym.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/savesym/savesym.sty
 INPUT ./kpfonts.sty
 INPUT ./kpfonts.sty
