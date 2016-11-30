@@ -1,5 +1,10 @@
  Webpage for thesis proposal.
- View latest version.
+         
+         ## changelog
+         v. 1.3.3 - displayed pdf is now publishedVersion.pdf compiled from publishedVersion.Rmd
+                  - HEAD is in decPropv#.Rmd
+            
+ ## View latest version.
  Leave comments as Issues.
  Workflow inspired by [Marshall](https://github.com/drphilmarshall/Ideas-for-Citizen-Science-in-Astronomy), who claims benefits from early access to peer-review of his pre-publication project.
 
