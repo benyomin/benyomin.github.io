@@ -8,7 +8,8 @@ bibliography: currentEcon.bib
 biblio-style: authoryear-comp
 subparagraph: true
 toc: false
-output: 
+output:
+  latex_engine: xelatex
   bookdown::pdf_document2:
     fig_caption: yes
     fig_height: 5
