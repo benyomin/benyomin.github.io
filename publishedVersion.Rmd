@@ -85,8 +85,7 @@ The data used in the proposed study should allow me to measure the extent to whi
 When empirically tested, data showed that 85% of respondents did not increase consumption in response to a change in their shares portfolio. Several reasons were suggested why changes in the value of wealth held in different forms would illicit different consumption effects from households.
 Some prices changes in some assets may be viewed as transitory, others may be harder to measure than the daily feedback of the stock quote. Tax laws may discourage the sale of certain assets and wealth may be held in separate "mental accounts," one of which may be a rainy-day fund against life's uncertainties. When variable rental rates were used as a proxy for uncertainty, homeownership rates were shown to increase.[@CQS2005]
                       
-### the Israeli housing market
-#### Mechir Lamistaken - The Israeli first-time homebuyers program
+### Mechir Lamistaken - The Israeli first-time homebuyers program
         Finance Minister Moshe Kahlon has a plan to deal with the excess demand in the housing market caused by real estate speculators who would own one apartment and still buy one or more others as rental property.
         The Mechir Lamistaken program sells land to developers at a below market rate if the housing is reserved for first-time buyers.
        However, there is evidence for widespread use by investors of strawbuyers to evade the restriction. Thus, young families are still squeezed out of the market and the government forgoes revenue from land sales while benefiting investors.
