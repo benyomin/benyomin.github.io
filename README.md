@@ -4,7 +4,7 @@
          v. 1.3.3 - displayed pdf is now publishedVersion.pdf compiled from publishedVersion.Rmd
                   - HEAD is in decPropv#.Rmd
          v. 1.3.7 - actually compiled once, adding local copy of savesym.sty, apt-get installs a very old version of tex-live, I'm using a newer from a .deb, but there is a problem with installing packages on the fly that are declared with \require{package} in a .tex file
-            
+         v. 1.3.9 - works, except for text below H3, which overflows the margins, possible I commented out the H3 definition. Will make section H2 without a subheading for workaround.
  ## View latest version.
  Leave comments as Issues.
  Workflow inspired by [Marshall](https://github.com/drphilmarshall/Ideas-for-Citizen-Science-in-Astronomy), who claims benefits from early access to peer-review of his pre-publication project.
