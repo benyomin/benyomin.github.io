@@ -1,0 +1,15 @@
+git log -Safter_success -- .travis.yml
+
+* search git log with  -S  "the pickaxe"
+
+commit 16119f8
+Author: בנימן הגלילי <benyominhagalili@mail.ru>
+Date:   Tue Nov 29 17:51:52 2016 +0200
+
+    remove after-success
+
+commit 9d2d6c9
+Author: בנימן הגלילי <benyominhagalili@mail.ru>
+Date:   Mon Sep 12 13:20:53 2016 +0300
+
+    deploy.sh
