@@ -10,6 +10,7 @@ subparagraph: true
 toc: false
 output:
   bookdown::pdf_document2:
+    latex_engine: xelatex
     fig_caption: yes
     fig_height: 5
     fig_width: 8
