@@ -2,9 +2,7 @@ language: R
 cache: packages
 pandoc_version: 1.19
 before_install:
-                - uname -s
-                - uname -m
-                - uname -r
+                - chmod +x tools/deploy.sh
                 - texlua install-getnonfreefonts
                 - pdftex --version
                 - mktexlsr
