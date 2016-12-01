@@ -11,7 +11,7 @@ before_install:
                 - wget http://mirror.ctan.org/install/fonts/carlito.tds.zip
                 - unzip carlito.tds.zip -d /home/travis/texlive/texmf-dist
                 - texhash
-                - tlmgr install xpatch
+                - tlmgr install xpatch kpfonts
                 
 install: echo Installation step #do not remove this line!
 notifications:
