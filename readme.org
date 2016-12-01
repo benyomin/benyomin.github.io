@@ -1,0 +1,8 @@
+* this branch (gh-pages) [VIEWER]
+controls the view of the webpage
+http://benyomin.github.io
+
+* analysis of data [MODEL]
+and
+* compilation of the .Rmd [CONTROLLER]
+takes place in branch (master)
