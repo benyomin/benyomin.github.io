@@ -1,8 +1,9 @@
-os: osx
 language: R
+cache: packages
 pandoc_version: 1.19
 before_install:
-                - brew install R
+                - apt-get update
+                - apt-get install texlive
                 - uname -s
                 - uname -m
                 - uname -r
