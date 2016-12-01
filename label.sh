@@ -9,7 +9,7 @@ cp test2.gif  versions/$filename
 cd versions
 ls
 cd ..
-git add .
+git add $filename
 git commit -m "$filename"
 git push origin master:deploy
 rm -rd versions
