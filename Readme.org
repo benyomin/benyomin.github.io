@@ -12,6 +12,7 @@
          v. 1.3.9 - works, except for text below H3, which overflows the margins, possible I commented out the H3 definition. Will make section H2 without a subheading for workaround.
          v. 1.4   - script to download Carlito font and install to tex-live distribution
          v. 1.4.1 - try to send log files back to github
+         v. 1.4.2 - builds locally after removing ukdate dependency (this fixed no /begin document)
 * View latest version.
 Leave comments as Issues.
 * Workflow inspired by [Marshall](https://github.com/drphilmarshall/Ideas-for-Citizen-Science-in-Astronomy), who claims benefits from early access to peer-review of his pre-publication project.
