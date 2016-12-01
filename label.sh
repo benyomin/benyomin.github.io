@@ -11,7 +11,6 @@ ls
 cd ..
 git add .
 git commit -m "$filename"
-git push - u origin deploy
-git checkout master
+git push origin master:deploy
 rm -rd versions
 
