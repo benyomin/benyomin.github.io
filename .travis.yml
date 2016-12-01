@@ -2,11 +2,12 @@ language: R
 cache: packages
 pandoc_version: 1.19
 before_install:
-                - tlmgr install texlive-latex-extra texlive-fonts-recommended
+                - tlmgr install texlive-fonts-recommended
                 - uname -s
                 - uname -m
                 - uname -r
                 - texlua install-getnonfreefonts
+                - getnonfreefonts carlito
                 - pdftex --version
                 - mktexlsr
                 - wget http://mirror.ctan.org/install/fonts/carlito.tds.zip
