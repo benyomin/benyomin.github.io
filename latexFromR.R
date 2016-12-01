@@ -1,4 +1,3 @@
-## version 0.58 still!! missing \begin document
 source("./install_if_needed.R",echo=FALSE)
 install_if_needed("devtools")
 library(devtools)

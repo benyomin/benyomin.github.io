@@ -13,6 +13,7 @@
          v. 1.4   - script to download Carlito font and install to tex-live distribution
          v. 1.4.1 - try to send log files back to github
          v. 1.4.2 - builds locally after removing ukdate dependency (this fixed no /begin document)
+         v. 1.4.3 - file xpatch.sty
 * View latest version.
 Leave comments as Issues.
 * Workflow inspired by [Marshall](https://github.com/drphilmarshall/Ideas-for-Citizen-Science-in-Astronomy), who claims benefits from early access to peer-review of his pre-publication project.

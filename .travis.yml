@@ -18,10 +18,10 @@ notifications:
 script: R < latexFromR.R --save
 after_failure:
                 - git config user.name "Travis Auto"
-                - git config global user.email "automated@logging.err"
+                - git config user.email "automated@logging.err"
                 - git checkout -b gh-pages
                 - git config user.name "Travis Auto"
-                - git config global user.email "automated@logging.err"
+                - git config user.email "automated@logging.err"
                 - git add *.log
                 - git commit -m "latest failure logs"
                 - git push -f -q https://benyomin:$GH_TOKEN@github.com/benyomin/benyomin.github.io-gh-pages gh-pages &2>/dev/null
