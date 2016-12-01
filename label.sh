@@ -1,0 +1,16 @@
+#!/bin/bash
+# label.sh
+#
+today=`date +%Y-%m-%d.%H:%M:%S`
+filename="test$today.gif"
+echo $filename;
+git checkout deploy -- versions
+cp test.gif  versions/$filename
+cd versions
+ls
+cd ..
+git add .
+git commit -m "$filename"
+git push
+git checkout master
+
