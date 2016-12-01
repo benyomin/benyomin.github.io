@@ -1,10 +1,5 @@
-## tools::texi2pdf('./marco.tex', clean = FALSE, quiet = TRUE,
-##                           texi2dvi = getOption("texi2dvi"),
-##                           texinputs = NULL, index = TRUE)
-## version 0.3b1
-##   Not making .tex with R
-## minimal example
-                                        #install.packages("devtools")
+## version 0.4b5  missing \begin document
+install.packages("devtools")
 source("./install_if_needed.R",echo=FALSE)
 install_if_needed("devtools")
 library(devtools)
