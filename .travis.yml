@@ -1,12 +1,11 @@
+os: osx
 language: R
-cache: packages
 pandoc_version: 1.19
 before_install:
+                - brew install R
                 - uname -s
                 - uname -m
                 - uname -r
-                - wget https://github.com/yihui/ubuntu-bin/releases/download/latest/texlive-local.deb
-                - sudo dpkg -i texlive-local.deb
                 - texlua install-getnonfreefonts
                 - pdftex --version
                 - mktexlsr
