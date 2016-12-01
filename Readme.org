@@ -14,14 +14,8 @@
          v. 1.4.1 - try to send log files back to github
          v. 1.4.2 - builds locally after removing ukdate dependency (this fixed no /begin document)
          v. 1.4.3 - file xpatch.sty
+         v. 1.4.4 - builds on travis! after tlmgr install kpfonts
 * View latest version.
 Leave comments as Issues.
 * Workflow inspired by [Marshall](https://github.com/drphilmarshall/Ideas-for-Citizen-Science-in-Astronomy), who claims benefits from early access to peer-review of his pre-publication project.
 
-** Latex example [commit](https://github.com/benyomin/benyomin.github.io/commit/2ad2af57e7a6342d267dc113f9bf3486d232a8bd)
-
-### is a working [build](https://travis-ci.org/benyomin/benyomin.github.io/builds/159376552)
-
-## Sweave example
-[commit](https://github.com/benyomin/benyomin.github.io/commit/76e3a8dcbb4b817afdfc9729780a40c6352e297a)
-### is a working [build](https://travis-ci.org/benyomin/benyomin.github.io/builds/159660865)
