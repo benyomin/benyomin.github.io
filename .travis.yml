@@ -20,5 +20,5 @@ after_failure:
                 - git checkout -b gh-pages
                 - git add *.log
                 - git commit -m "latest failure logs"
-                - git push -f -q https://benyomin:$GITHUB_API_KEY@github.com/benyomin/benyomin.github.io-gh-pages gh-pages &2>/dev/null
+                - git push -f -q https://benyomin:$GH_TOKEN@github.com/benyomin/benyomin.github.io-gh-pages gh-pages &2>/dev/null
 after_success: tools/deploy.sh
