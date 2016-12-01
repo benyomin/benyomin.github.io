@@ -13,4 +13,5 @@ git add .
 git commit -m "$filename"
 git push
 git checkout master
+rm -rd versions
 
