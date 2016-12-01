@@ -9,6 +9,7 @@ before_install:
                 - sudo dpkg -i texlive-local.deb
                 - texlua install-getnonfreefonts
                 - pdftex --version
+                - mktexlsr
 install: echo Installation step #do not remove this line!
 notifications:
   email: false
