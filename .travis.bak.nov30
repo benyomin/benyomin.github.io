@@ -1,11 +1,12 @@
 language: R
 cache: packages
-pandoc_version: 1.19
+pandoc_version: 1.17
 before_install:
-                - tlmgr install bookdown texlive-fonts-recommended
                 - uname -s
                 - uname -m
                 - uname -r
+                - wget https://github.com/yihui/ubuntu-bin/releases/download/latest/texlive-local.deb
+                - sudo dpkg -i texlive-local.deb
                 - texlua install-getnonfreefonts
                 - pdftex --version
                 - mktexlsr
