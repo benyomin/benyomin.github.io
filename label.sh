@@ -2,7 +2,7 @@
 # label.sh
 #
 today=`date +%Y-%m-%d.%H:%M:%S`
-filename="paperVersion$today.gif"
+filename="paperVersion$today.pdf"
 echo $filename;
 cd versions
 cp ../publishedVersion.pdf ./$filename
