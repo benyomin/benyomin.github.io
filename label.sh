@@ -4,10 +4,12 @@
 today=`date +%Y-%m-%d.%H:%M:%S`
 filename="paperVersion$today.pdf"
 #echo $filename;
-cp publishedVersion.pdf $filename.pdf
-git checkout --deploy "versions/readme.org"
-mv $filename.pdf versions/$filename.pdf
-git config user.name "Travis-CI"
+cp publishedVersion.pdf $filename
+#git checkout branch -- file
+#git checkout branch -- "path/file.txt"
+git checkout deploy -- "versions/readme.org"
+mv $filename versions/$filename
+git config user.name "benyomin"
 git config user.email "jon@msnbs.co.uk"
 cd versions
 git add $filename
