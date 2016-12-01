@@ -2,15 +2,16 @@
 # label.sh
 #
 today=`date +%Y-%m-%d.%H:%M:%S`
-filename="test$today.gif"
+filename="paperVersion$today.gif"
 echo $filename;
-git checkout deploy -- versions
-cp test2.gif  versions/$filename
 cd versions
+cp ../publishedVersion.pdf ./$filename
 ls
-cd ..
+git config user.name "Travis-CI"
+git config user.email "jon@msnbs.co.uk"
 git add $filename
 git commit -m "$filename"
-git push origin master:deploy
+git push --force --quiet "https://${GH_TOKEN}@github.com/benyomin/benyomin.github.io.git" master:deploy > /dev/null 2>&1
+cd ..
 rm -rd versions
 
