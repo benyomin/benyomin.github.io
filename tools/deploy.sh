@@ -1,9 +1,20 @@
-#/bin/bash
-git checkout -b gh-pages
-git config user.name "Travis Auto"
-git config user.email "automated@logging.err"
-mv publishedVersion.pdf ./proofs/publishedVersion.pdf
-git add .
-git commit -m "new successful version"
-git push -f -q https://benyomin:$GH_TOKEN@github.com/benyomin/benyomin.github.io-gh-pages gh-pages &2>/dev/null
+#!/bin/bash
+# label.sh
+#
+today=`date +%Y-%m-%d.%H:%M:%S`
+filename="paperVersion$today.pdf"
+#echo $filename;
+cp publishedVersion.pdf $filename
+#git checkout branch -- file
+#git checkout branch -- "path/file.txt"
+git checkout deploy -- "versions/readme.org"
+mv $filename versions/$filename
+git config user.name "benyomin"
+git config user.email "jon@msnbs.co.uk"
+cd versions
+git add $filename
+git commit -m "$filename"
+git push --force --quiet "https://${GH_TOKEN}@github.com/benyomin/benyomin.github.io.git" master:deploy > /dev/null 2>&1
+cd ..
+rm -rd versions
 
