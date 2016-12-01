@@ -1,0 +1,21 @@
+language: R
+sudo: false
+cache: packages
+pandoc_version: 1.17
+language: r
+
+sudo: false
+cache: packages
+warnings_are_errors: false
+
+before_install:
+  - tlmgr install standalone showexpl imakeidx xpatch
+
+install: echo Installation step #do not remove this line!
+
+notifications:
+  email: false
+
+script: R < latexFromR.R --no-save
+
+after_success: tools/deploy.sh
