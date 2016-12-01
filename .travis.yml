@@ -8,6 +8,7 @@ before_install:
                 - wget https://github.com/yihui/ubuntu-bin/releases/download/latest/texlive-local.deb
                 - sudo dpkg -i texlive-local.deb
                 - texlua install-getnonfreefonts
+                - pdftex --version
 install: echo Installation step #do not remove this line!
 notifications:
   email: false
