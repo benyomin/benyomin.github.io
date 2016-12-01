@@ -1,0 +1,21 @@
+language: R
+cache: packages
+pandoc_version: 1.19
+before_install:
+                - tlmgr install texlive-fonts-recommended
+                - uname -s
+                - uname -m
+                - uname -r
+                - texlua install-getnonfreefonts
+                - getnonfreefonts carlito
+                - pdftex --version
+                - mktexlsr
+                - wget http://mirror.ctan.org/install/fonts/carlito.tds.zip
+                - unzip carlito.tds.zip -d /home/travis/texlive/texmf-dist
+                - texhash
+                
+install: echo Installation step #do not remove this line!
+notifications:
+  email: false
+script: R < latexFromR.R --save
+after_success: tools/deploy.sh
