@@ -5,7 +5,7 @@ today=`date +%Y-%m-%d.%H:%M:%S`
 filename="test$today.gif"
 echo $filename;
 git checkout deploy -- versions
-cp test.gif  versions/$filename
+cp test2.gif  versions/$filename
 cd versions
 ls
 cd ..
