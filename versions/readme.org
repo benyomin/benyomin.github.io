@@ -1,2 +1,0 @@
-* time-stamped compiled versions of the project
-* they are sent here after a push is made to travis-ci
