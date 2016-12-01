@@ -1,6 +1,11 @@
 language: R
 cache: packages
 pandoc_version: 1.19
+addons:
+  apt:
+    packages:
+             -r-base-dev
+             -r-recommended
 before_install:
                 - uname -s
                 - uname -m
