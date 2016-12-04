@@ -5,7 +5,6 @@ script: /bin/bash gh-publisher-scripts/gh-publisher.sh
 before_install:
 - echo installing latex packages
 - yes "" | sudo apt-add-repository ppa:texlive-backports/ppa
-- sudo apt-get update -y
 - sudo apt-get install -y
      inkscape
      texlive-fonts-recommended
