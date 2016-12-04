@@ -1,0 +1,35 @@
+Package: thesisProposal
+Type: Package
+Title: HousingWealthEffect
+Version: 0.2.8
+Date: 2016-12-04
+Author: Benyomin 
+Description: Housing Wealth Effect reproducible research.
+License: BSD_2_clause + file LICENSE
+Depends: 
+    R (>= 3.2.0),
+    methods,
+    yaml
+Imports: 
+    dplyr,
+    reshape2,
+    purrr,
+    broom,
+    rJava,
+    xlsx,
+    magrittr,
+    ggplot2,
+    RCurl,
+    zoo,
+    data.table,
+    bookdown,
+    ggplot2,
+    foreign,
+    tidyr
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Collate: 
+ 'compileWorkingDraft.R'
+RoxygenNote: 5.0.1.9000

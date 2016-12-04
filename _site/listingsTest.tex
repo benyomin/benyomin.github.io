@@ -1,0 +1,59 @@
+% Created 2016-08-16 Tue 09:49
+\documentclass[koma, a4paper, utopia, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{listing}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{setspace}
+\doublespacing
+\usepackage[margin=1in]{geometry}
+\author{Brandon Payne}
+\date{13 - Sept - 2016}
+\title{compile with Travis Please}
+\lstset{
+    language=R,
+    basicstyle=\scriptsize\ttfamily,
+    commentstyle=\ttfamily\color{gray},
+    numbers=left,
+    numberstyle=\ttfamily\color{gray}\footnotesize,
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=single,
+    upquote=true,
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    title=\lstname,
+    escapeinside={},
+    keywordstyle={},
+    morekeywords={}
+    }
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{I am a latex file with some R code thrown in!!}
+\label{sec:orgheadline1}
+
+R code is included from the external file: 
+\lstinputlisting[language=R]{./latexFromR.R}
+\end{document}
