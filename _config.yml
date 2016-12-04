@@ -7,9 +7,9 @@
 # Remove the # from the front of each line, and then edit appropriately.
 #
 
-title: Russians in Israel Thesis Proposal
-abstract: We review the expanding economic impact of Russian-Israelis.
-iframe_src: marco.pdf
+title: The Choice Between Renting and Home Ownership in the Israeli Housing Market
+abstract: attempt to finish something
+iframe_src: publishedVersion.pdf
 
 
 # You can specify multiple authors, just follow the pattern below.
@@ -18,5 +18,6 @@ iframe_src: marco.pdf
 
 authors:
 - name: Brandon Payne
-  address: Sde Boker, Israel.github_username: benyomin
+  address: Sde Boker, Israel.
+github_username: benyomin
 github_repo: benyomin
