@@ -32,46 +32,6 @@
 \usepackage[style=authoryear-comp]{biblatex}
 
 \addbibresource{currentEcon.bib}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{{#1}}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-\newcommand{\ImportTok}[1]{{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{{#1}}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{{#1}}}}
-\newcommand{\BuiltInTok}[1]{{#1}}
-\newcommand{\ExtensionTok}[1]{{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{{#1}}}
-\newcommand{\RegionMarkerTok}[1]{{#1}}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{{#1}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{{#1}}}}
-\newcommand{\NormalTok}[1]{{#1}}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -123,7 +83,7 @@
 
 \wp{Housing Wealth Effect Proposal}
 
-\jel{C10,C14,C22}
+%\jel{C10,C14,C22}
 
 \addresses{
 \textbf{Brandon Payne}\\
@@ -292,151 +252,6 @@ they are promised balance grants by the Ministry of Interior.
 
 \section{Methodology}\label{methodology}
 
-\subsection{Reproducible Research}\label{reproducible-research}
-
-As a simple example of reproducibility, I include here the code that
-produces figure 1, the line graphs of GDP and Household Consumption from
-World Bank Data.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{importGDP<-}\KeywordTok{read_csv}\NormalTok{(}\StringTok{"rawData/gdp_consumption.csv"}\NormalTok{)}
-\NormalTok{consumption<-importGDP[-}\KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{7}\NormalTok{), -}\KeywordTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{)]}
-\NormalTok{ConsGDP<-}\KeywordTok{melt}\NormalTok{(consumption,}\DataTypeTok{id=}\StringTok{"year"}\NormalTok{)}
-\NormalTok{figure1<-}\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data=}\NormalTok{ConsGDP,}
-           \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{year,}
-               \DataTypeTok{y=}\NormalTok{value,}
-               \DataTypeTok{ylab=}\StringTok{"2010 Costant USD (hundred billion)"}\NormalTok{,     }\DataTypeTok{shape=}\NormalTok{variable,}
-               \KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{limits =}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{320000000000}\NormalTok{)),}
-              \CommentTok{# legend=NULL,}
-               \DataTypeTok{group=}\NormalTok{variable))}
-           \NormalTok{+}\KeywordTok{geom_point}\NormalTok{()+}\KeywordTok{geom_line}\NormalTok{()}
-           \NormalTok{+}\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Israel: GDP,}
-\StringTok{            Household Consumption: 2006-2015"}\NormalTok{)}
-           \NormalTok{+}\KeywordTok{labs}\NormalTok{(}\DataTypeTok{subtitle=}\StringTok{"Hundred Billion USD"}\NormalTok{)}
-\KeywordTok{percent}\NormalTok{(ConsGDP[}\DecValTok{10}\NormalTok{,}\DecValTok{3}\NormalTok{] /}\StringTok{ }\NormalTok{ConsGDP[}\DecValTok{20}\NormalTok{,}\DecValTok{3}\NormalTok{])}
-\end{Highlighting}
-\end{Shaded}
-
-Let's look at these five commands in detail. The first line imports the
-data which was downloaded as a comma separated values file into a matrix
-called \textbf{importGDP}. The second line strips off explanatory rows
-and colums that were included in the file, leaving only the numbers
-needed for the analysis. Brackets after an object's name access its
-{[}Rows,Colums{]}. The R syntax \textbf{c()} creates a list. Here we
-have a list of rows 1, 2, 3, 6 and 7, and a list of columns. The
-\textbf{-c} indicates that these rows and colums are being removed. The
-remaining rows and colums are saved as a new matrix called
-\textbf{consumption}.
-
-\begin{tabular}{r|l|l}
-\hline
-year & Household Consumption & GDP\\
-\hline
-2006 & 86221105076.5295 & 154511423313.434\\
-\hline
-2007 & 102682261872.885 & 179564275455.807\\
-\hline
-2008 & 125721014492.754 & 216760312151.616\\
-\hline
-2009 & 117825954276.123 & 208068814688.605\\
-\hline
-2010 & 134117945974.86 & 234321743781.76\\
-\hline
-2011 & 149337078337.665 & 261764344205.025\\
-\hline
-2012 & 143996472937.576 & 259613579190.332\\
-\hline
-2013 & 162407776669.99 & 292408330563.864\\
-\hline
-2014 & 170790407781.101 & 305674837195.003\\
-\hline
-2015 & 163855613872.594 & 296075434804.981\\
-\hline
-2016 & NA & NA\\
-\hline
-\end{tabular}
-
-The object consumption contains two observations per row, the values for
-household consumption and GDP for each year. The next line
-\textbf{melt(consumption,id=``year'')} remakes this matrix into what is
-know as the tidy data format of one observation per row and saves it
-with the new name \textbf{ConsGDP}. Having our data in the tidy format
-will make writing analysis and graphing code much simpler.
-
-\begin{tabular}{l|r|l|l}
-\hline
-  & year & variable & value\\
-\hline
-1 & 2006 & Household Consumption & 86221105076.5295\\
-\hline
-2 & 2007 & Household Consumption & 102682261872.885\\
-\hline
-3 & 2008 & Household Consumption & 125721014492.754\\
-\hline
-4 & 2009 & Household Consumption & 117825954276.123\\
-\hline
-5 & 2010 & Household Consumption & 134117945974.86\\
-\hline
-6 & 2011 & Household Consumption & 149337078337.665\\
-\hline
-7 & 2012 & Household Consumption & 143996472937.576\\
-\hline
-8 & 2013 & Household Consumption & 162407776669.99\\
-\hline
-9 & 2014 & Household Consumption & 170790407781.101\\
-\hline
-10 & 2015 & Household Consumption & 163855613872.594\\
-\hline
-12 & 2006 & GDP & 154511423313.434\\
-\hline
-13 & 2007 & GDP & 179564275455.807\\
-\hline
-14 & 2008 & GDP & 216760312151.616\\
-\hline
-15 & 2009 & GDP & 208068814688.605\\
-\hline
-16 & 2010 & GDP & 234321743781.76\\
-\hline
-17 & 2011 & GDP & 261764344205.025\\
-\hline
-18 & 2012 & GDP & 259613579190.332\\
-\hline
-19 & 2013 & GDP & 292408330563.864\\
-\hline
-20 & 2014 & GDP & 305674837195.003\\
-\hline
-21 & 2015 & GDP & 296075434804.981\\
-\hline
-\end{tabular}
-
-Here \textbf{ConsGDP} is displayed with rows 11 and 22 removed. The NA
-indicates that data for 2016 hasn't been released yet.
-
-Next the plot is drawn. All of the (x,y) pairs of (year, value) are
-plotted, each variable becomes a separate line on the graph. If we had
-included a third variable in the matrix \textbf{consumption}, melt would
-still have produced a tidy format that would be graphable by the same
-code.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{year, }\DataTypeTok{y=}\NormalTok{value, }\DataTypeTok{group=}\NormalTok{variable)}
-\end{Highlighting}
-\end{Shaded}
-
-The last line divides the GDP in 2015 {[}row10, column3{]} by the
-Household consumption {[}row20, column3{]} of the same year. This code
-is included directly in the text of the sentence immediately following
-figure 1.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{As can be seen from the graph, in }\DecValTok{2015} \NormalTok{Household Consumption }
-\NormalTok{was }\StringTok{`}\DataTypeTok{r percent(ConsGDP[10,3] / ConsGDP[20,3])}\StringTok{`} \NormalTok{of GDP.}
-\end{Highlighting}
-\end{Shaded}
-
 This research is being conducted in the interdisciplinary field of
 Israel Studies. It lies at the intersection of sociology and economics.
 It partially adheres to the practices of reproducible research,
@@ -510,7 +325,7 @@ years & Consumption & www.cbs.gov.il/www/ + & houseP\_savedAs\\
 \end{tabular}
 
 \clearpage
-\nocite{*}
+<!-- <--- \nocite{*} --> --\textgreater{}
 
 \printbibliography
 
