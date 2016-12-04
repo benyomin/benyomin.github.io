@@ -1,6 +1,9 @@
-language: R 
+language: R
+cache: packages
+pandoc_version: 1.19
 script: /bin/bash gh-publisher-scripts/gh-publisher.sh
 before_install:
+- echo installing latex packages
 - yes "" | sudo apt-add-repository ppa:texlive-backports/ppa
 - sudo apt-get update -y
 - sudo apt-get install -y
@@ -9,3 +12,8 @@ before_install:
      texlive-latex-extra
      texlive-latex-recommended
      texlive-xetex
+- pdftex --version
+- tlmgr install xpatch kpfonts
+- wget http://mirror.ctan.org/install/fonts/carlito.tds.zip
+- unzip carlito.tds.zip -d /home/travis/texlive/texmf-dist
+- texhash
