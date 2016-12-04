@@ -1,4 +1,4 @@
-importGDP<-read_csv("gdp_consumption.csv")
+importGDP<-read_csv("rawData/gdp_consumption.csv")
 importGDP[5,]<-c("year","year","year","year",2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016)
 gdp<-importGDP[-c(2,3,4,6,7),-c(2,3,4)] #subset [rows,columns]
 gdp[1,16]<-NA # add NA for incomplete year

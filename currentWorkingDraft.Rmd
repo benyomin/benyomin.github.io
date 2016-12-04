@@ -24,7 +24,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
-source("./includes/updatePackage.R",  echo=FALSE)
+#source("./includes/updatePackage.R",  echo=FALSE)
 source("./includes/getHousePrices.R", echo=FALSE)
 source("./includes/importPrices.R",   echo=FALSE)
 source("./includes/getGDP.R",         echo=FALSE)

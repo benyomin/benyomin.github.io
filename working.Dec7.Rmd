@@ -24,12 +24,12 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
-source("./updatePackage.R",  echo=FALSE)
-source("./getHousePrices.R", echo=FALSE)
-source("./importPrices.R",   echo=FALSE)
-source("./getGDP.R",         echo=FALSE)
-source("./graphGDPhouseholdConsumption.R",echo=FALSE)
-source("./groupHouseSize.R",echo=FALSE)
+#source("./includes/updatePackage.R",  echo=FALSE)
+source("./includes/getHousePrices.R", echo=FALSE)
+source("./includes/importPrices.R",   echo=FALSE)
+source("./includes/getGDP.R",         echo=FALSE)
+source("./includes/graphGDPhouseholdConsumption.R",echo=FALSE)
+source("./includes/groupHouseSize.R",echo=FALSE)
 ```
 
 \begin{abstract}
@@ -111,7 +111,7 @@ An important factor that reduces the supply of housing by increasing permitting 
 ## Reproducible Research 
 As a simple example of reproducibility, I include here the code that produces figure 1, the line graphs of GDP and Household Consumption from World Bank Data.
 ```{r, echo=TRUE,eval=FALSE}
-importGDP<-read_csv("gdp_consumption.csv")
+importGDP<-read_csv("rawData/gdp_consumption.csv")
 consumption<-importGDP[-c(1,2,3,6,7), -c(2,3,4)]
 ConsGDP<-melt(consumption,id="year")
 figure1<-ggplot(data=ConsGDP,
