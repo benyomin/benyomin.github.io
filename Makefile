@@ -5,7 +5,7 @@
 RDIR = .
 DATA_DIR = $(RDIR)/rawData
 
-BUILDPDF = R < includes/compileWorkingDraft.R --save
+BUILDPDF = R < tools/compileWorkingDraft.R --save
 
 all: pdf
 
