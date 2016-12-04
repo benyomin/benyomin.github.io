@@ -28,6 +28,11 @@ click "Download Options" "csv"
 ** 1.4.6 - trash gh-publisher branch
 ** 1.4.7 - deploy unit tests
 ** 1.4.8 - rebase, working Makefile
+** 1.4.9 - webpage working
+** 1.5   - kislevDraft.Rmd  
+*** remove reproducibility section
+*** remove references that aren't cited
+*** remove JEL classifications
 * View latest version.
 Leave comments as Issues.
 * This piece of reproducible research  
