@@ -8,7 +8,7 @@
 #
 
 title: test
-abstract: this is a test
+abstract: this is so slow
 
 # This controls which file is shown on the right-hand side of the published
 # HTML page.  By default it will take the first PDF or HTML file that it
@@ -26,4 +26,4 @@ authors:
 #  address: School of Dance and Drama,<br />College of the Northern Light,<br />Dogger, Fisher, German Bight.
 github_username: benyomin
 github_repo: benyomin
-iframe_src: ./proofs/currentWorkingDraft.pdf
+iframe_src: currentWorkingDraft.pdf
