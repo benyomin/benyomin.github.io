@@ -1,0 +1,5 @@
+* do you see what I see?
+
+this file should not be uploaded to github, 
+github should have the directory and a readme, but no 
+other files
