@@ -1,0 +1,9 @@
+
+\newif\if@euk@noweekday
+\newif\if@euk@usdate
+\newif\if@euk@julian
+\DeclareOption{no-weekday}{\@euk@noweekdaytrue} 5 \DeclareOption{ukdate}{\@euk@usdatefalse}
+\DeclareOption{usdate}{\@euk@usdatetrue}
+\DeclareOption{gregorian}{\@euk@julianfalse} 8 \DeclareOption{julian}{\@euk@juliantrue}
+\ExecuteOptions{ukdate,gregorian}
+\ProcessOptions\relax
