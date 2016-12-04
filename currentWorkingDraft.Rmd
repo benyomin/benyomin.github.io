@@ -24,12 +24,12 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
-#source("./includes/updatePackage.R",  echo=FALSE)
-source("./includes/getHousePrices.R", echo=FALSE)
-source("./includes/importPrices.R",   echo=FALSE)
-source("./includes/getGDP.R",         echo=FALSE)
-source("./includes/graphGDPhouseholdConsumption.R",echo=FALSE)
-source("./includes/groupHouseSize.R",echo=FALSE)
+source(".includes/updatePackage.R",  echo=FALSE)
+source(".includes/getHousePrices.R", echo=FALSE)
+source(".includes/importPrices.R",   echo=FALSE)
+source(".includes/getGDP.R",         echo=FALSE)
+source(".includes/graphGDPhouseholdConsumption.R",echo=FALSE)
+source(".includes/groupHouseSize.R",echo=FALSE)
 ```
 
 \begin{abstract}
@@ -107,7 +107,7 @@ The Mechir Lamistaken program sells land to developers at a below market rate if
 An important factor that reduces the supply of housing by increasing permitting times for new construction is the lack of municipally determined property tax rates. New residential units add an additional burden on city infrastructure and do not pay for themselves in terms of the taxes they generate. Wealthier districts make up the short fall through taxes on commercial property. Poorer localities throw up additional barriers to delay the construction of apartments until they are promised balance grants by the Ministry of Interior.
 
 # Methodology
-
+<!---
 ## Reproducible Research 
 As a simple example of reproducibility, I include here the code that produces figure 1, the line graphs of GDP and Household Consumption from World Bank Data.
 ```{r, echo=TRUE,eval=FALSE}
@@ -154,7 +154,8 @@ This code is included directly in the text of the sentence immediately following
 As can be seen from the graph, in 2015 Household Consumption 
 was `r percent(ConsGDP[10,3] / ConsGDP[20,3])` of GDP.
 ```
-
+-->
+    
 This research is being conducted in the interdisciplinary field of Israel Studies. It lies at the intersection of sociology and economics.
 It partially adheres to the practices of reproducible research, i.e. methods are fully reported and the process by which raw data is anaylzed is viewable. Unfortunately, while the housing price data is freely distributable, the household level consumption data is not.
 This is fully reproducible after obtaining the listed datasets, which are available from the Central Bureau of Statistics and the Israel Social Sciences Data Center.
@@ -258,4 +259,4 @@ plot4.5rooms
 
 ```
 \clearpage
-\nocite{*} 
+<!-- <--- \nocite{*} --> -->
