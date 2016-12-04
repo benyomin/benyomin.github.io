@@ -7,8 +7,11 @@ DATA_DIR = $(RDIR)/rawData
 
 BUILDPDF = R < includes/compileWorkingDraft.R --save
 
-all: test
+all: pdf
 
-test:
+clean:
+	@rm -f *.aux *.bbl *.out *.toc currentWorkingDraft.pdf
+
+pdf:
 	echo running Makefile;
 	$(BUILDPDF)
