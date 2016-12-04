@@ -32,3 +32,4 @@ CMakeLists.txt.user
 .orig
 .vagrant
 tags
+.run.xml
