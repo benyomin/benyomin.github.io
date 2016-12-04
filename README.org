@@ -33,6 +33,7 @@ click "Download Options" "csv"
 *** remove reproducibility section
 *** remove references that aren't cited
 *** remove JEL classifications
+** 1.5.1 - kanban
 * View latest version.
 Leave comments as Issues.
 * This piece of reproducible research  
