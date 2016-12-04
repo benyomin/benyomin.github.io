@@ -16,3 +16,6 @@ before_install:
 - wget http://mirror.ctan.org/install/fonts/carlito.tds.zip
 - unzip carlito.tds.zip -d /home/travis/texlive/texmf-dist
 - texhash
+notifications:
+  email: false
+after_success: tools/deploy.sh
