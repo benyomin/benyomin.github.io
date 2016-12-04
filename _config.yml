@@ -19,11 +19,11 @@ abstract: this is a test
 # These fields can contain HTML tags.  You probably want to put <br />
 # in the address somewhere, indicating a line break.
 
-#authors:
-#- name: Joseph H. Bloggs
-#  address: International Institute for Interminable Examples, P.O. Box 1,<br />Beverly Hills, CA 90210, USA.
+authors:
+- name: Joseph H. Bloggs
+  address: International Institute for Interminable Examples, P.O. Box 1,<br />Beverly Hills, CA 90210, USA.
 #- name: Clara McNarma
 #  address: School of Dance and Drama,<br />College of the Northern Light,<br />Dogger, Fisher, German Bight.
 github_username: benyomin
 github_repo: benyomin
-iframe_src: currentWorkingDraft.pdf
+iframe_src: ./proofs/currentWorkingDraft.pdf
