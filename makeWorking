@@ -1,1 +1,1 @@
-R < compileWorkingDraft.R --save
+R < tools/compileWorkingDraft.R --save
