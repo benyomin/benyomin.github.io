@@ -24,7 +24,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
-#source("./includes/updatePackage.R",  echo=FALSE)
+source("./includes/updatePackage.R",  echo=FALSE)
 source("./includes/getHousePrices.R", echo=FALSE)
 source("./includes/importPrices.R",   echo=FALSE)
 source("./includes/getGDP.R",         echo=FALSE)
@@ -45,7 +45,7 @@ Uses pseudo-panel construction to calculate the housing wealth effect for region
 #Introduction
 ## The housing market
 The study of housing provides a fascinating topic for the researcher of Israeli society.
-Several factors have drawn attention to the housing market and made it a topic of much discussion.
+**Several factors** have drawn attention to the housing market and made it a topic of much discussion.
 The price of housing was one of the main issues that drove more than 400,000 demonstrators to the streets in the summer of 2011.
 Large portions of the Israeli population own a home, or rent one, or live in a multi-family household. 
 Their first-hand experience of the market may be relayed to the researcher as anecdotal evidence of the state of the housing market,
