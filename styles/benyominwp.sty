@@ -142,7 +142,10 @@
 \def\nocover{\def\titlepage{{\newpage\pageone\newpage\blindtitle}}}
 
 \let\maketitle\titlepage
-
+% additions due to fontspec/ xelatex usage
+%\setmainfont[
+%BoldFont={}]{}
+%
 %% SPACING
 \RequirePackage{setspace}
 \spacing{1.5}
@@ -182,7 +185,7 @@
   {\end{minipage}}
 
 
-%\usepackage[T1]{fontenc} %fontenc conflicts with xelatex fontspec
+\usepackage[T1]{fontenc} %fontenc conflicts with xelatex fontspec
 \usepackage[utf8]{inputenc}
 %\usepackage{amsmath}
 \usepackage[showonlyrefs]{mathtools}
