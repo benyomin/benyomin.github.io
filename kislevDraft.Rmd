@@ -259,4 +259,3 @@ plot4.5rooms
 
 ```
 \clearpage
-<!-- <--- \nocite{*} --> -->
