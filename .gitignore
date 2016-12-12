@@ -1,6 +1,7 @@
 /drafts/
 /secret/
 /build/
+/rawData/
 build_*/
 build-*/
 *-build/
