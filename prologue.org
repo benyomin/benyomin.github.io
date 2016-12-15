@@ -1,0 +1,132 @@
+## prologue
+
+I'm reminded of Cohn's "An anthropologist among the historians." 
+I have nostalgia for a time when we stayed within our own disciplines.
+Because these others seem to have never heard the phrase "ceteris paribus."
+
+## description of the israeli economy / housing
+
+We speak in this project of the Israel that has taken place since the seismic shifts
+introduced by the 1985 Stabilization Program. This is aided by a theoretical perspective in
+which we are interested in the supply of housing currently in the market, i.e. available for
+sale at the current time. This **supply of housing** is different from the **housing stock**
+which is all the apartments already constructed. This housing stock was constructed at
+varying times under various political-economic regimes.
+
+The data used in the proposed study explicitly comes from the 9 largest urban regions in the
+country. The nine Residental Areas are Jerusalem, Tel Aviv, Haifa, Gush Dan, Center, South,
+Sharon, North and Qrayot Haifa.  
+
+The "Household Expenditure Survey" from which this study draws was conducted about every 5th year before
+1997, and yearly since then.  It includes a questionnaire and a biweekly diary.  
+It covers all households in Israel (more than 2 million households), except collective localities, and Bedouins living outside of localities.  
+The sample of the Household Expenditure Survey includes approximately 6,000 households.
+
+Where did the money for the expensive housing come from?  
+In the 40 years between 1967 and 2007, the percentage of income which was spent on food feel from 28% to 17%, while housing expenditure rose from 14% to 22%.  
+The first two numbers sum to 44%, while the second sum to 39%.
+
+In 2007, 69% of households lived in owned dwellings, 26% lived in rented dwellings, and the rest lived in key-money dwellings or in free housing.
+
+# Lit Review.
+
+## I read so many things.  
+Here I divide them into supply, demand, and psychology and recount them for your listening pleasure.
+
+Discussing the land registry is Tabu in Israel. 
+Decisions were made to incorporate the existing British Mandate legal structure into the foundation of the new polity.
+Land may be owned outright, owned by the government with a 49 year lease, and an option to renew the 49 year lease, or may be church land. 
+Privately owned property is registered in the District Lands Registry Offices (Lishkat Rishum Mekarke’in) around the country and is commonly known as “Tabu”. 
+
+Public Land
+ 
+Property which is owned by the State or the Jewish National Fund (JNF).  These properties are administered through the Israel Lands Authority (Minhal Mekarkei Yisrael).  The property is leased to apartment owners, generally for periods of 49 years, renewable at the end of each term.  There is an annual rental fee for the lease period, however, in new construction this is capitalized and paid for at the beginning of the period.  Approximately 95% of the property in Israel is controlled by the Minhal.
+
+Taxes: 
+In addition to changes to the Land Acquisition rates, January 1, 2014 brought major changes in the availability of exemptions from Capital Gains Tax. Foreign residents no longer have immediate exemptions from capital gains taxes, nor Israelis on investment apartments. 
+ 
+Because of the changes to the tax structure, it is even more important to make certain that you are properly represented and receive legal advice.
+
+## imaginate
+
+Imagine trying to write a nice-simple discussion of housing in Weimar Germany, with the premise that the situation is perfectly normal.
+
+ Rental Assistance:
+Three housing-assistance companies provide rental subsidies: Amidar, Matan-Chen and M.A.G.A.R.
+
+## comparative aspects
+I'm a big-time expert on the US housing market, so I naturally make uncited references to norms from there.
+
+## urban population
+Around 92% of Israel's population live in urban areas. (http://www.jewishvirtuallibrary.org/jsource/Society_&_Culture/Urban.html)
+
+## corruption
+I am reminded of a quote by Sir John Harington, an English courtier to Queen Elizabeth I.
+"Treason doth never prosper: what's the reason?
+Why, if it prosper, none dare call it treason."
+Collusion or conspiracy in restraint of trade . . . Does this at all describe the JNF/ Israel Lands Authority.
+How does it target the amount of land to be released into the building market every quarter?
+
+
+The holyland case led to 2014 bribery convictions for a former deputy mayor of Jerusalem Simchayof and former mayor/prime Minister Olmert. If this is the kind of corruption that can be involved to rezone one old hotel into residential apartment construction, imagine the scale that might be involved with all the apartments being built and sold every year.
+We are potentially talking about lots of fingers in lots of pies, and this poor researcher would rather not have powerful enemies at this point.
+
+
+What about the 7% ?? 
+The agricultural sector holds 1.23 million acres, with the estimated worth of $80 billion. The ILA just doesn’t want to deal with that."
+
+## international Macro-Econ perspective
+Israel has been the recipient of large hot-money inflows. The carry-trade suggests that you borrow money in a low-interest rate country and lend it at a higher rate in another country.  (Forbes citation)
+Any potential weakness in the shekels would cause the value of these local loans to fall. 
+The absence of currency-controls which allow this money to be quickly withdrawn from the Israeli economy and moved elsewhere is what gives hot-money its name.
+The Israeli economy as a whole, and the local housing market with it is a bubble very near bursting.
+
+** what we are witnessing
+is the failure of central planning, without the acknowledgement of the need to give up on central planning. 
+There is also a misunderstanding that the existence of some non-state actors in a mixed economy does not a free-market make.
+
+** the bubble will pop when -- reversion to the mean
+(http://www.investopedia.com/articles/07/housing_bubble.asp)
+supply continues to increase, but demand falls
+demand will fall b/c of an interest rate rise or
+
+
+** Mechir Matara 
+is a program passed in 2014 which will sell apartments for approximateley 20% below the market price in Rosh Ha’ayin and Modiin.
+To participate one must meet two criteria
+The program is intended for those lacking housing and those looking to improve their present housing circumstances.
+Lacking Housing
+The term ‘Lacking Housing’ refers to individuals at least 35 years old and/or family units where neither he nor any member have rights of ownership to an apartment unit or any portion thereof, and who had no such rights 10 years prior to their purchasing a ‘Mechir Matara’ apartment. 
+Improving Housing
+ The term ‘Improving Housing’ pertains to singles at least 35 years old or a family unit where one of its members owns an apartment unit which will be sold within 12 months of receipt of ‘Form no. 4’ for the apartment being acquired, or who owned an apartment unit in the 10 years prior to purchasing a ‘Mechir Matara’ apartment.
+A purchaser of a Mechir Matara apartment may rent it out, but may not sell it for 5 years after the purchase.
+
+Currently (2016) government assistance to renters is provided through three programs, "Public Housing", "Rental Assistance", and the "Apartment Rental Program." (http://www.moch.gov.il/English/housing_assistance/public_housing/Pages/public_housing.aspx)
+
+Government mortgages are provided through the November 2015 amendment to the Housing Loans Law of 1992.
+Eligibility is based on points, which are accumulated according to years registered for the program, age upon making aliyah, number of children in the family, service in the IDF.
+
+he mortgage interest rates will be 0.5% less than the average interest rates of mortgage banks publicized by the Bank of Israel, but no more than 3%, depending on the repayment schedule chosen by the borrower. Prior to the amendment the interest rate stood at 3.0%. 
+
+
+Bank Leumi report (Israel’s Residential Real Estate Market)
+shows that there is an increase in unsold units built by public initiative.
+The new supply  . ..  . due to Mechir Lamistaken . . .  ???
+
+
+* Cause for emigration
+(http://www.jpost.com/Opinion/Unaffordable-housing-is-harming-Israel-466363)
+500k Israelis living in the US, 200k of the 1 million Russian olim have now left IL.
+
+** divergence between long-run Buying Price vs monthly rental
+value - (http://qz.com/209093/israels-housing-bubble-is-glaringly-obvious/)
+Rents are telling because they’re seen as a pure read on the value of housing services themselves. In other words, rents tell you what people will pay to actually live in a place. (Are the amenities nice? Are the schools good? Is the commute terrible?) Home sales prices are often more tied to the investment characteristics of housing (after you buy the house, will its value go up?) so they incorporate an element of speculation.
+
+** 3rd-sector policy papers:
+*** Kohelet
+http://en.kohelet.org.il/wp-content/uploads/2016/05/KPF055_eReal_estate_240416.pdf
+*** Adva
+*** One other one
+
+** Construction minister Galant - 
+contractors bought land from the government, but decided to hold it for a few years before developing it or selling it.
