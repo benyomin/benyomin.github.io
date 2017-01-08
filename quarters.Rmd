@@ -1,0 +1,109 @@
+---
+title: "quarterlyRentData"
+output: 
+ pdf_document: 
+    keep_tex: yes
+    latex_engine: xelatex
+---
+Q1. How many quarters are we talking about?
+
+A1. 47
+
+Q2. What q were the protests?  = June 2011, = btw q2 and q3
+
+A2. 2011q2 = 23rd quarter
+```{r, cache=TRUE, include=FALSE}
+library(censusFunctions)
+library(ggplot2)
+library(pander)
+library(scales)
+source("./includes/getHousePrices.R", echo=FALSE)
+source("./includes/importPrices.R",   echo=FALSE)
+source("./includes/getGDP.R",         echo=FALSE)
+source("./includes/graphGDPhouseholdConsumption.R",echo=FALSE)
+
+source("./includes/groupHouseSize.R",echo=FALSE)
+
+```
+```{r}
+(p1.5$quarter)[1]  ## 2006
+(p1.5$quarter)[47] ## 2016.5
+(p1.5$quarter)[23]
+     
+     
+```
+Quarters 1-23, 2006q1 to 2011q2 are pre-protest.
+Quarters 24-47, 2011q3 to 2016q2 are post-protest.
+
+# Find the average yearly change in housing prices for each region in the 
+pre- and post- protest environment.
+
+Formula:
+[Pq23 - Pq1 / 6.75 (# of years)] * 100%
+```{r}
+dh = Haifa1.5$value[23] - Haifa1.5$value[1]  ## 90.6 k NIS increase over T
+ph = dh/Haifa1.5$value[1] ## 31% increase over T
+yh = percent(ph / 6.75)        ## yearly increase
+
+dn = national1.5$value[23] - national1.5$value[1]  ## 90.6 k NIS increase over T
+pn = dh/national1.5$value[1] ## 31% increase over T
+yn = percent(ph / 6.75)        ## yearly increase
+
+dc = centerJeruPeri1.5$value[23] - centerJeruPeri1.5$value[1]  ## 90.6 k NIS increase over T
+pc = dh/centerJeruPeri1.5$value[1] ## 31% increase over T
+yc = percent(ph / 6.75)        ## yearly increase
+
+dd = GushDan1.5$value[23] - GushDan1.5$value[1]  ## 90.6 k NIS increase over T
+pd = dh/GushDan1.5$value[1] ## 31% increase over T
+yd = percent(ph / 6.75)        ## yearly increase
+
+dj = Jerusalem1.5$value[23] - Jerusalem1.5$value[1]  ## 90.6 k NIS increase over T
+pj = dh/Jerusalem1.5$value[1] ## 31% increase over T
+yj = percent(ph / 6.75)        ## yearly increase
+
+ds = South1.5$value[23] - South1.5$value[1]  ## 90.6 k NIS increase over T
+ps = dh/South1.5$value[1] ## 31% increase over T
+ys = percent(ph / 6.75)        ## yearly increase
+
+dn = North1.5$value[23] - North1.5$value[1]  ## 90.6 k NIS increase over T
+pn = dh/North1.5$value[1] ## 31% increase over T
+yn = percent(ph / 6.75)        ## yearly increase
+
+dq = qrayotHaifa1.5$value[23] - qrayotHaifa1.5$value[1]  ## 90.6 k NIS increase over T
+pq = dh/qrayotHaifa1.5$value[1] ## 31% increase over T
+yq = percent(ph / 6.75)        ## yearly increase
+
+ds = Sharon1.5$value[23] - Sharon1.5$value[1]  ## 90.6 k NIS increase over T
+ps = dh/Sharon1.5$value[1] ## 31% increase over T
+ys = percent(ph / 6.75)        ## yearly increase
+
+dt = tlv1.5$value[23] - tlv1.5$value[1]  ## 90.6 k NIS increase over T
+pt = dh/tlv1.5$value[1] ## 31% increase over T
+yt = percent(ph / 6.75)        ## yearly increase
+```
+```{r}
+shortNames = c("national","centerJeruPeri","GushDan","Haifa","Jerusalem",
+               "South","North","qrayotHaifa","Sharon","tlv")
+
+shortNames
+
+#typeof(Haifa1.5)
+#as.data.frame(Haifa1.5)
+#super1.5 = as.data.frame(c(national1.5,centerJeruPeri1.5,GushDan1.5))
+
+```
+another section
+```{r table-simple, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+panderOptions('table.split.table', Inf)
+set.caption("Did protests cool housing market?")
+my.data <- " # what did housing prices do??
+  Region        | Pre-Protest           | Post-Protest
+  col 3 is      |  #$yt | $1600 
+  col 2 is      | centered      |   $12 
+  zebra stripes | are neat      |    $1"
+df <- read.delim(textConnection(my.data),header=FALSE,sep="|",strip.white=TRUE,stringsAsFactors=FALSE)
+names(df) <- unname(as.list(df[1,])) # put headers on
+df <- df[-1,] # remove first row
+row.names(df)<-NULL
+pander(df, style = 'rmarkdown')
+```

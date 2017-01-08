@@ -1,0 +1,71 @@
+---
+title: "alligators2"
+output: html_notebook
+---
+simple Question??
+
+```{r}
+set.seed(5)
+x1<- c(1:20)
+x2<- c(21:40)
+x <- c(x1,x2)
+x3<- c(1:40)
+#x
+factor<-runif(10,.5,1)
+y1 <-x1*factor
+y1
+y2 <-5*(x2*factor)
+y2 #  <-c(y1,y2)
+y2
+y <-c(y1,y2)
+y
+plot(x,y)
+
+
+#df<-melt(rbind(x,y))
+
+#df
+#lm(data=df, x ~ y)
+```
+see
+if the R function diff helps
+```{r}
+y17 <-diff(y)
+y18<-c(NA,y17)
+qplot(x,y18)
+```
+
+try a harder one
+```{r}
+x200<-c(-1000:1000,1)
+x200
+y198<-(x200 + 200)^2
+qplot(x200,y198)
+```
+
+find the derivative
+```{r}
+y199<-diff(y198)
+y200<-c(NA,y199)
+y201<-diff(y200)
+y202<-c(NA,y201)
+qplot(x200,y202)
+```
+
+
+try a cubic function
+```{r}
+#y4 <- -(15*x-4)^2 +7
+y4 <- (x-40)^2
+y4
+qplot(x,y4)
+y5<-diff(y4)
+## the derivative is one shorter, add 1 NA to the front
+y5
+y6<-c(NA,y5)
+y6
+qplot(x,y6)
+```
+```{r}
+```
+
