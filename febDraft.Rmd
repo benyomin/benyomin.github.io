@@ -1,0 +1,52 @@
+---
+title: "Calculating the Housing Wealth Effect of Israeli regional cohorts"
+author: "Brandon Payne"
+fontsize: 12pt
+papersize: a4
+fontfamily: kpfonts
+bibliography: currentEcon.bib
+biblio-style: authoryear-comp
+subparagraph: true
+toc: false
+output:
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    fig_caption: yes
+    fig_height: 5
+    fig_width: 8
+    includes:
+      in_header: preamble.tex
+    keep_tex: yes
+    number_sections: yes
+    citation_package: biblatex 
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
+#source("./includes/updatePackage.R",  echo=FALSE)
+#source("./includes/getHousePrices.R", echo=FALSE)
+#source("./includes/importPrices.R",   echo=FALSE)
+#source("./includes/getGDP.R",         echo=FALSE)
+#source("./includes/graphGDPhouseholdConsumption.R",echo=FALSE)
+#source("./includes/groupHouseSize.R",echo=FALSE)
+```
+
+\begin{abstract}
+Uses pseudo-panel construction to calculate the housing wealth effect for regional cohorts of Isreali households. Combines data from the Central Bureau of Statistics Household Expenditure Survey and the Consumer Price Index.
+\end{abstract}
+
+\begin{keywords}
+ consumption, economics, housing, housing market, liquidity constraints, wealth effect 
+\end{keywords}
+
+\newpage
+
+#Introduction
+## The housing market
+
+## Consumption by Households
+# Literature Review
+## the housing wealth effect                          
+# Structure of the project
+![project workflow](images/umlDiag1.png)

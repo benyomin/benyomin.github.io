@@ -1,0 +1,47 @@
+---
+title: "import Consumption Data"
+output: html_notebook
+---
+import consumption data into R from the provided files
+```{r,cache=true}
+#f456
+library(foreign)
+library(Hmisc)
+#fname2002 <- ("../rawData/census/f4xx/f4xxind.por")
+#dataset2002 = read.spss(fname, to.data.frame = TRUE) ## missiing
+
+fname2003 <- ("../rawData/census/f463/f463ind.sps")
+dataset2003 = read.spss(fname, use.value.labels=TRUE, to.data.frame = TRUE) 
+fname2004 <- ("../rawData/census/f466/f466ind.sps")
+dataset2004 = read.spss(fname, to.data.frame = TRUE)
+
+#fname2005 <- ("../rawData/census/f467/")  ## wrong name??
+#dataset2005 = read.spss(fname, to.data.frame = TRUE)
+
+#fname2006 <- ("../rawData/census/f68/"
+#dataset2006 = read.spss(fname, to.data.frame = TRUE)
+
+#fname2007 <- ("../rawData/census/f4xx/f4xxind.por")
+#dataset2007 = read.spss(fname, to.data.frame = TRUE)
+
+#fname2008 <- ("../rawData/census/f4xx/f4xxind.por")
+#dataset2008 = read.spss(fname, to.data.frame = TRUE)
+
+#fname2009 <- ("../rawData/census/f4xx/f4xxind.por")
+#dataset2009 = read.spss(fname, to.data.frame = TRUE)
+
+#fname2010 <- ("../rawData/census/f4xx/f4xxind.por")
+#dataset2010 = read.spss(fname, to.data.frame = TRUE)
+
+#fname2011 <- ("../rawData/census/f4xx/f4xxind.por")
+#dataset2011 = read.spss(fname, to.data.frame = TRUE)
+
+#fname2012 <- ("../rawData/census/f4xx/f4xxind.por")
+#dataset2012 = read.spss(fname, to.data.frame = TRUE)
+
+
+## working import !!                            ##
+# read.spss(fname, to.data.frame = TRUE) : 
+# file '/Volumes/PORTABLE/census/f456/f456ind.por'
+## use the .por file                            ##
+```

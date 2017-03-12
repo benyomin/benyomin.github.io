@@ -1,0 +1,22 @@
+---
+title: "renters"
+output: 
+ pdf_document: 
+    keep_tex: yes
+    latex_engine: xelatex
+---
+# renters ??
+# owners ??
+find them in the data, what is the number of renters/owners in each year?
+```{r, cache=TRUE, include=FALSE}
+library(censusFunctions)
+library(ggplot2)
+#library(pander)
+library(scales)
+source("./includes/getHousePrices.R", echo=FALSE)
+source("./includes/importPrices.R",   echo=FALSE)
+source("./includes/getGDP.R",         echo=FALSE)
+source("./includes/graphGDPhouseholdConsumption.R",echo=FALSE)
+source("./includes/groupHouseSize.R",echo=FALSE)
+
+```

@@ -1,0 +1,175 @@
+library(memisc)
+yr2000 <- spss.portable.file("../rawData/census/f461/f461fam.por")
+yr2001 <- spss.portable.file('../rawData/census/f462/f462fam.por')
+yr2002 <- spss.portable.file("../rawData/census/f463/f463fam.por")
+yr2003 <- spss.portable.file("../rawData/census/f464/f464fam.por")
+yr2004 <- spss.portable.file("../rawData/census/f466/f466fam.por")
+yr2005 <- spss.portable.file("../rawData/census/f467/f467fam.por")
+yr2006 <- spss.portable.file("../rawData/census/f468/n468fam.por")#n-not-f
+yr2007 <- spss.portable.file("../rawData/census/f469/f469fam.por")
+yr2008 <- spss.portable.file("../rawData/census/f474/f474fam.por")
+yr2009 <- spss.portable.file("../rawData/census/f472/f472fam.por")
+yr2010 <- spss.portable.file("../rawData/census/f471/f471fam.por")
+yr2011 <- spss.portable.file("../rawData/census/f459/f459fam.por")
+yr2012 <- spss.portable.file("../rawData/census/f458/f458fam.por")
+yr2013 <- spss.portable.file("../rawData/census/f457/f457fam.por")
+yr2014 <- spss.portable.file("../rawData/census/f456/f456fam.por")
+##ind2004 <- spss.get("../rawData/census/f466/f466ind.por",
+##                 use.value.labels = TRUE)
+library(Hmisc)
+exp2004 <- spss.get("../rawData/census/f466/f466exp.por",
+                  use.value.labels = TRUE)
+exp2005 <- spss.get("../rawData/census/f467/f467exp.por",
+                  use.value.labels = TRUE)
+exp2006 <- spss.get("../rawData/census/f468/f468exp.por",         #f again
+                  use.value.labels = TRUE)
+exp2007 <- spss.get("../rawData/census/f469/f469exp.por",
+                  use.value.labels = TRUE)
+exp2008 <- spss.get("../rawData/census/f474/f474exp.por",
+                  use.value.labels = TRUE)
+exp2009 <- spss.get("../rawData/census/f472/f472exp.por",
+                    use.value.labels = TRUE)
+exp2010 <- spss.get("../rawData/census/f471/f471exp.por",
+                    use.value.labels = TRUE)
+exp2011 <- spss.get("../rawData/census/f459/f459exp.por",
+                    use.value.labels = TRUE)
+exp2012 <- spss.get("../rawData/census/f458/f458exp.por",
+                    use.value.labels = TRUE)
+exp2013 <- spss.get("../rawData/census/f457/f457exp.por",
+                    use.value.labels = TRUE)
+exp2014 <- spss.get("../rawData/census/f456/f456exp.por",
+                    use.value.labels = TRUE)
+exp2004df <-as.data.frame(exp2004)
+exp2004s <-select(exp2004df, c(HHNUM,Q1,Q3,Q23,Q64,Q294,Q298))
+exp2005df <-as.data.frame(exp2005)
+exp2005s <-select(exp2005df, c(HHNUM,Q1,Q3,Q23,Q64,Q294,Q298))
+exp2006df <-as.data.frame(exp2006)
+exp2006s <-select(exp2006df, c(HHNUM,Q1,Q3,Q23,Q64,Q294,Q298))
+exp2007df <-as.data.frame(exp2007)
+exp2007s <-select(exp2007df, c(HHNUM,Q1,Q3,Q23,Q64,Q294,Q298))
+exp2008df <-as.data.frame(exp2008)
+exp2008s <-select(exp2008df, c(HHNUM,Q1,Q3,Q23,Q64,Q294,Q298))
+exp2009df <-as.data.frame(exp2009)
+exp2009s <-select(exp2009df, c(HHNUM,Q1,Q3,Q23,Q64,Q294,Q298))
+exp2010df <-as.data.frame(exp2010)
+exp2010s <-select(exp2010df, c(HHNUM,Q1,Q3,Q23,Q64,Q294,Q298))
+exp2011df <-as.data.frame(exp2011)
+exp2011s <-select(exp2011df, c(HHNUM,Q1,Q3,Q23,Q64,Q294,Q298))
+exp2012df <-as.data.frame(exp2012)
+exp2012s <-select(exp2012df, c(HHNUM,Q1,Q3,Q23,Q64,Q294,Q298))
+exp2013df <-as.data.frame(exp2013)
+exp2013s <-select(exp2013df, c(HHNUM,Q1,Q3,Q23,Q64,Q294,Q298))
+exp2014df <-as.data.frame(exp2014)
+exp2014s <-select(exp2014df, c(HHNUM,Q1,Q3,Q23,Q64,Q294,Q298))
+
+# yr.2000<- subset(yr2000,
+#                  select=c(
+#                      valueOfApt = v42,
+#                      netIncome = v43,
+#                      aptSize = v40
+#                  ))
+# yr2001 <- spss.portable.file('../rawData/census/f462/f462fam.por')
+# yr.2001 <-subset(yr2001,
+#                  select=c(
+#                      valueOfApt = v42,
+#                      netIncome = v43,
+#                      aptSize = v40,
+#                      ownApt = v48
+#                  ))
+#description(yr.2001)
+#yr2002 <- spss.portable.file("../rawData/census/f463/f463fam.por")
+#yr.2002 <-subset(yr2002,
+ #                select=c(
+  #                   valueOfApt = v42,
+   #                  netIncome = v43
+           #          aptSize = v40,
+           #          ownApt = v48
+    ##             ))
+# yr.2002 <-within(yr.2002,{
+#     ownApt <- recode(ownApt,
+#                      1 -> "Yes", 
+#                      2 -> "No",
+#                      9 -> "Missing"
+#                          )
+# })
+yr.2003 <-subset(yr2003,
+                 select=c(
+                     rent = rent,
+                     owner = owner))
+yr.2004 <-subset(yr2004,
+                 select=c(
+                      rent = rent,
+                     owner = owner, 
+                     hhnum = hhnum,
+                     rooms = rooms, 
+                     codeloc = codeloc))
+yr.2005 <-subset(yr2005,
+                 select=c(
+                      rent = rent,
+                     owner = owner, 
+                     hhnum = hhnum,
+                     rooms = rooms, 
+                   codeloc = codeloc))
+yr.2006 <-subset(yr2006,
+                 select=c(
+                      rent = rent,
+                     owner = owner, 
+                     hhnum = hhnum,
+                     rooms = rooms, 
+                   codeloc = codeloc))
+yr.2007 <-subset(yr2007,
+                 select=c(
+                      rent = rent,
+                     owner = owner, 
+                     hhnum = hhnum,
+                     rooms = rooms, 
+                   codeloc = codeloc))
+yr.2008 <-subset(yr2008,
+                 select=c(
+                      rent = rent,
+                     owner = owner, 
+                     hhnum = hhnum,
+                     rooms = rooms, 
+                   codeloc = codeloc))
+yr.2009 <-subset(yr2009,
+                 select=c(
+                      rent = rent,
+                     owner = owner, 
+                     hhnum = hhnum,
+                     rooms = rooms, 
+                   codeloc = codeloc))
+yr.2010 <-subset(yr2010,
+                 select=c(
+                      rent = rent,
+                     owner = owner, 
+                     hhnum = hhnum,
+                     rooms = rooms, 
+                   codeloc = codeloc))
+yr.2011 <-subset(yr2011,
+                 select=c(
+                      rent = rent,
+                     owner = owner, 
+                     hhnum = hhnum,
+                     rooms = rooms, 
+                   codeloc = codeloc))
+yr.2012 <-subset(yr2012,
+                 select=c(
+                      rent = rent,
+                     owner = owner, 
+                     hhnum = hhnum,
+                     rooms = rooms, 
+                   codeloc = codeloc))
+yr.2013 <-subset(yr2013,
+                 select=c(
+                      rent = rent,
+                     owner = owner, 
+                     hhnum = hhnum,
+                     rooms = rooms, 
+                   codeloc = codeloc))
+yr.2014 <-subset(yr2014,
+                 select=c(
+                      rent = rent,
+                     owner = owner, 
+                     hhnum = hhnum,
+                     rooms = rooms, 
+                   codeloc = codeloc))

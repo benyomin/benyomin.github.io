@@ -1,0 +1,75 @@
+* Readme.org 
+** saved dataframes
+*** how did theses get produced?
+**** file set 1)
+expFamInd2014.txt
+expFamInd2013.txt
+expFamInd2012.txt
+expFamInd2011.txt
+expFamInd2010.txt
+expFamInd2009.txt
+expFamInd2008.txt
+expFamInd2007.txt
+expFamInd2005.txt
+expFamInd2006.txt
+expFamInd2004.txt
+***** code to export:
+dput(expFamInd2004, file="../dataframes/expFamInd2004.txt")
+dput(expFamInd2005, file="../dataframes/expFamInd2005.txt")
+dput(expFamInd2006, file="../dataframes/expFamInd2006.txt")
+dput(expFamInd2007, file="../dataframes/expFamInd2007.txt")
+dput(expFamInd2008, file="../dataframes/expFamInd2008.txt")
+dput(expFamInd2009, file="../dataframes/expFamInd2009.txt")
+dput(expFamInd2010, file="../dataframes/expFamInd2010.txt")
+dput(expFamInd2011, file="../dataframes/expFamInd2011.txt")
+dput(expFamInd2012, file="../dataframes/expFamInd2012.txt")
+dput(expFamInd2013, file="../dataframes/expFamInd2013.txt")
+dput(expFamInd2014, file="../dataframes/expFamInd2014.txt")
+****** ../secret/jan18noon.Rmd
+**** file set 2)
+data2010.txt
+data2011.txt
+data2012.txt
+data2013.txt
+data2014.txt
+data2004.txt
+data2005.txt
+data2006.txt
+data2007.txt
+data2008.txt
+data2009.txt
+exp2014s.txt
+exp2013s.txt
+exp2011s.txt
+exp2012s.txt
+exp2009s.txt
+exp2010s.txt
+exp2008s.txt
+exp2006s.txt
+exp2007s.txt
+exp2005s.txt
+exp2004s.txt
+***** code to export:
+data2004<-merge(exp2004s,fam2004s, by="HHNUM")
+data2005<-merge(exp2005s,fam2005s, by="HHNUM")
+data2006<-merge(exp2006s,fam2006s, by="HHNUM")
+data2007<-merge(exp2007s,fam2007s, by="HHNUM")
+data2008<-merge(exp2008s,fam2008s, by="HHNUM")
+data2009<-merge(exp2009s,fam2009s, by="HHNUM")
+data2010<-merge(exp2010s,fam2010s, by="HHNUM")
+data2011<-merge(exp2011s,fam2011s, by="HHNUM")
+data2012<-merge(exp2012s,fam2012s, by="HHNUM")
+data2013<-merge(exp2013s,fam2013s, by="HHNUM")
+data2004<-merge(exp2014s,fam2014s, by="HHNUM")
+dput(exp2004s, file="../dataframes/exp2004s.txt")
+dput(exp2005s, file="../dataframes/exp2005s.txt")
+dput(exp2006s, file="../dataframes/exp2006s.txt")
+dput(exp2007s, file="../dataframes/exp2007s.txt")
+dput(exp2008s, file="../dataframes/exp2008s.txt")
+dput(exp2009s, file="../dataframes/exp2009s.txt")
+dput(exp2010s, file="../dataframes/exp2010s.txt")
+dput(exp2011s, file="../dataframes/exp2011s.txt")
+dput(exp2012s, file="../dataframes/exp2012s.txt")
+dput(exp2013s, file="../dataframes/exp2013s.txt")
+dput(exp2014s, file="../dataframes/exp2014s.txt")
+****** ../secret/jan18am.Rmd

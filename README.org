@@ -1,4 +1,24 @@
 * Readme.org
+** Thesis template:
+*** Reed is in development, may have good M$ Word export soon
+https://github.com/ismayc/thesisdown
+**** Reed uses multiple chapters.
+*** changes from Monash:
+I modified the monashwp.sty, it's now benyomin.wp.sty
+**** uses my uni logo 
+**** uses US not UK dates
+seems to be 
+*** Monash
+http://robjhyndman.com/hyndsight/rmarkdown-template/
+**** single preamble is separate, then all chapters in one File?
+rather than
+*** Reed
+http://blogs.reed.edu/ed-tech/2015/11/r-markdown-senior-thesis-template/
+**** distributed as thesisdown package
+```{r}
+devtools::install_github("ismayc/thesisdown")
+```
+****
 ** this is not sourced on github, that file is README.md
 ** TODO make the .md from this .org using pandoc on travis (priority: very low)
 ** this directory is stored on github.com/benyomin/workingDec
@@ -34,6 +54,7 @@ click "Download Options" "csv"
 *** remove references that aren't cited
 *** remove JEL classifications
 ** 1.5.1 - kanban
+** 1.5.2 - use febDraft
 * View latest version.
 Leave comments as Issues.
 * This piece of reproducible research  

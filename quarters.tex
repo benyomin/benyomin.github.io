@@ -24,7 +24,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
-            pdftitle={quarterlyRentData},
+            pdftitle={Protests slowed home price appreciation},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -68,7 +68,6 @@
 \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{{#1}}}
 \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{{#1}}}}
 \newcommand{\NormalTok}[1]{{#1}}
-\usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -113,7 +112,7 @@
 }
 
 \setlength{\droptitle}{-2em}
-  \title{quarterlyRentData}
+  \title{Protests slowed home price appreciation}
   \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
   \author{}
@@ -125,46 +124,33 @@
 \begin{document}
 \maketitle
 
-Q1. How many quarters are we talking about?
+\section{Were the protests}\label{were-the-protests}
 
-A1. 47
-
-Q2. What q were the protests? = June 2011, = btw q2 and q3
-
-A2. 2011q2 = 23rd quarter
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{(p1}\FloatTok{.5}\NormalTok{$quarter)[}\DecValTok{1}\NormalTok{]  ## 2006}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] "2006"
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{(p1}\FloatTok{.5}\NormalTok{$quarter)[}\DecValTok{47}\NormalTok{] ## 2016.5}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] "2016.5"
-\end{verbatim}
+an inflection point for home prices? In our meeting of Jan 1, 2017 we
+spent some time discussing this point, I don't know how/if/where I can
+incorporate this into the proposal, but I would like to share the
+results with you. As discussed, I find that prices are still rising, but
+rising more slowly post-protest. Visually, we graph home prices in all
+regions, as well as the national average, with a vertical black line at
+the June 2011 protests. There are five years before the protests and 5
+and 1/2 years post-protest. We are checking if the slope of the lines is
+indeed less-steep after the protests. We find that in the ``Center and
+Jerusalem Periphery'' and ``Northern'' regions, prices actually
+accelerated post-protest. In all other regions they still rose, but rose
+at a slower rate than they had before the protests. Thus, the protests
+did demarcate an inflection point for housing prices. We then present
+these changes in tabular format.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{(p1}\FloatTok{.5}\NormalTok{$quarter)[}\DecValTok{23}\NormalTok{]}
+\NormalTok{plot1.5rooms}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-## [1] "2011.5"
-\end{verbatim}
+\includegraphics{quarters_files/figure-latex/unnamed-chunk-4-1.pdf}
 
-Quarters 1-23, 2006q1 to 2011q2 are pre-protest. Quarters 24-47, 2011q3
-to 2016q2 are post-protest.
+Quarters 1-23, 2006q1 to 2011q2 are pre-protest. (5.5 years) Quarters
+24-47, 2011q3 to 2016q2 are post-protest. (5 years)
 
 \section{Find the average yearly change in housing prices for each
 region in
@@ -172,93 +158,35 @@ the}\label{find-the-average-yearly-change-in-housing-prices-for-each-region-in-t
 
 pre- and post- protest environment.
 
-Formula: {[}Pq23 - Pq1 / 6.75 (\# of years){]} * 100\%
+Most regions, and the national average experienced a slow-down in
+housing price growth after the summer 2011 protests. Yearly average
+price appreciation is shown for homes of 1.5-2.5 rooms. The before
+protests period is q1 2006 to q2 2011. The after protests period is q3
+2011 to q2 2016.
+
+The ``Northern Region'', and the ``Center and Jerusalem Periphery
+Region'' went against this trend, price appreciation in these two
+regions actually accelerated post-protest.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{dh =}\StringTok{ }\NormalTok{Haifa1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{23}\NormalTok{] -}\StringTok{ }\NormalTok{Haifa1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{]  ## 90.6 k NIS increase over T}
-\NormalTok{ph =}\StringTok{ }\NormalTok{dh/Haifa1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{] ## 31% increase over T}
-\NormalTok{yh =}\StringTok{ }\KeywordTok{percent}\NormalTok{(ph /}\StringTok{ }\FloatTok{6.75}\NormalTok{)        ## yearly increase}
-
-\NormalTok{dn =}\StringTok{ }\NormalTok{national1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{23}\NormalTok{] -}\StringTok{ }\NormalTok{national1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{]  ## 90.6 k NIS increase over T}
-\NormalTok{pn =}\StringTok{ }\NormalTok{dh/national1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{] ## 31% increase over T}
-\NormalTok{yn =}\StringTok{ }\KeywordTok{percent}\NormalTok{(ph /}\StringTok{ }\FloatTok{6.75}\NormalTok{)        ## yearly increase}
-
-\NormalTok{dc =}\StringTok{ }\NormalTok{centerJeruPeri1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{23}\NormalTok{] -}\StringTok{ }\NormalTok{centerJeruPeri1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{]  ## 90.6 k NIS increase over T}
-\NormalTok{pc =}\StringTok{ }\NormalTok{dh/centerJeruPeri1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{] ## 31% increase over T}
-\NormalTok{yc =}\StringTok{ }\KeywordTok{percent}\NormalTok{(ph /}\StringTok{ }\FloatTok{6.75}\NormalTok{)        ## yearly increase}
-
-\NormalTok{dd =}\StringTok{ }\NormalTok{GushDan1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{23}\NormalTok{] -}\StringTok{ }\NormalTok{GushDan1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{]  ## 90.6 k NIS increase over T}
-\NormalTok{pd =}\StringTok{ }\NormalTok{dh/GushDan1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{] ## 31% increase over T}
-\NormalTok{yd =}\StringTok{ }\KeywordTok{percent}\NormalTok{(ph /}\StringTok{ }\FloatTok{6.75}\NormalTok{)        ## yearly increase}
-
-\NormalTok{dj =}\StringTok{ }\NormalTok{Jerusalem1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{23}\NormalTok{] -}\StringTok{ }\NormalTok{Jerusalem1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{]  ## 90.6 k NIS increase over T}
-\NormalTok{pj =}\StringTok{ }\NormalTok{dh/Jerusalem1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{] ## 31% increase over T}
-\NormalTok{yj =}\StringTok{ }\KeywordTok{percent}\NormalTok{(ph /}\StringTok{ }\FloatTok{6.75}\NormalTok{)        ## yearly increase}
-
-\NormalTok{ds =}\StringTok{ }\NormalTok{South1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{23}\NormalTok{] -}\StringTok{ }\NormalTok{South1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{]  ## 90.6 k NIS increase over T}
-\NormalTok{ps =}\StringTok{ }\NormalTok{dh/South1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{] ## 31% increase over T}
-\NormalTok{ys =}\StringTok{ }\KeywordTok{percent}\NormalTok{(ph /}\StringTok{ }\FloatTok{6.75}\NormalTok{)        ## yearly increase}
-
-\NormalTok{dn =}\StringTok{ }\NormalTok{North1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{23}\NormalTok{] -}\StringTok{ }\NormalTok{North1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{]  ## 90.6 k NIS increase over T}
-\NormalTok{pn =}\StringTok{ }\NormalTok{dh/North1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{] ## 31% increase over T}
-\NormalTok{yn =}\StringTok{ }\KeywordTok{percent}\NormalTok{(ph /}\StringTok{ }\FloatTok{6.75}\NormalTok{)        ## yearly increase}
-
-\NormalTok{dq =}\StringTok{ }\NormalTok{qrayotHaifa1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{23}\NormalTok{] -}\StringTok{ }\NormalTok{qrayotHaifa1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{]  ## 90.6 k NIS increase over T}
-\NormalTok{pq =}\StringTok{ }\NormalTok{dh/qrayotHaifa1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{] ## 31% increase over T}
-\NormalTok{yq =}\StringTok{ }\KeywordTok{percent}\NormalTok{(ph /}\StringTok{ }\FloatTok{6.75}\NormalTok{)        ## yearly increase}
-
-\NormalTok{ds =}\StringTok{ }\NormalTok{Sharon1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{23}\NormalTok{] -}\StringTok{ }\NormalTok{Sharon1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{]  ## 90.6 k NIS increase over T}
-\NormalTok{ps =}\StringTok{ }\NormalTok{dh/Sharon1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{] ## 31% increase over T}
-\NormalTok{ys =}\StringTok{ }\KeywordTok{percent}\NormalTok{(ph /}\StringTok{ }\FloatTok{6.75}\NormalTok{)        ## yearly increase}
-
-\NormalTok{dt =}\StringTok{ }\NormalTok{tlv1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{23}\NormalTok{] -}\StringTok{ }\NormalTok{tlv1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{]  ## 90.6 k NIS increase over T}
-\NormalTok{pt =}\StringTok{ }\NormalTok{dh/tlv1}\FloatTok{.5}\NormalTok{$value[}\DecValTok{1}\NormalTok{] ## 31% increase over T}
-\NormalTok{yt =}\StringTok{ }\KeywordTok{percent}\NormalTok{(ph /}\StringTok{ }\FloatTok{6.75}\NormalTok{)        ## yearly increase}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{shortNames =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"national"}\NormalTok{,}\StringTok{"centerJeruPeri"}\NormalTok{,}\StringTok{"GushDan"}\NormalTok{,}\StringTok{"Haifa"}\NormalTok{,}\StringTok{"Jerusalem"}\NormalTok{,}
-               \StringTok{"South"}\NormalTok{,}\StringTok{"North"}\NormalTok{,}\StringTok{"qrayotHaifa"}\NormalTok{,}\StringTok{"Sharon"}\NormalTok{,}\StringTok{"tlv"}\NormalTok{)}
-
-\NormalTok{shortNames}
+\NormalTok{m}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-##  [1] "national"       "centerJeruPeri" "GushDan"        "Haifa"         
-##  [5] "Jerusalem"      "South"          "North"          "qrayotHaifa"   
-##  [9] "Sharon"         "tlv"
+##       Regions          beforeProtests afterProtests change   
+##  [1,] "national"       "8.92%"        "4.57%"       "(4.35%)"
+##  [2,] "centerJeruPeri" "5.38%"        "10.9%"       "5.52%"  
+##  [3,] "GushDan"        "3.69%"        "2.17%"       "(1.52%)"
+##  [4,] "Haifa"          "5.7%"         "4.57%"       "(1.13%)"
+##  [5,] "Jerusalem"      "2.72%"        "1.86%"       "(0.86%)"
+##  [6,] "South"          "7.66%"        "4.83%"       "(2.83%)"
+##  [7,] "North"          "5.6%"         "8.52%"       "2.92%"  
+##  [8,] "qrayotHaifa"    "6.15%"        "5.6%"        "(0.55)%"
+##  [9,] "Sharon"         "3.08%"        "2.73%"       "(0.35%)"
+## [10,] "tlv"            "2.4%"         "1.53%"       "(0.87%)"
 \end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{#typeof(Haifa1.5)}
-\CommentTok{#as.data.frame(Haifa1.5)}
-\CommentTok{#super1.5 = as.data.frame(c(national1.5,centerJeruPeri1.5,GushDan1.5))}
-\end{Highlighting}
-\end{Shaded}
-
-another section
-
-\begin{longtable}[]{@{}ccc@{}}
-\caption{Did protests cool housing market?}\tabularnewline
-\toprule
-\# what did housing prices do?? & ~ & ~\tabularnewline
-\midrule
-\endfirsthead
-\toprule
-\# what did housing prices do?? & ~ & ~\tabularnewline
-\midrule
-\endhead
-Region & Pre-Protest & Post-Protest\tabularnewline
-col 3 is & \#\$yt & \$1600\tabularnewline
-col 2 is & centered & \$12\tabularnewline
-zebra stripes & are neat & \$1\tabularnewline
-\bottomrule
-\end{longtable}
 
 
 \end{document}

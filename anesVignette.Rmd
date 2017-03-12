@@ -1,0 +1,104 @@
+---
+title: "memisc vignette"
+output: html_notebook
+---
+```{r}
+knit_print.codebook <-function(x,...) 
+  knitr::asis_output(format_html(x,...))
+
+knit_print.descriptions <-function(x,...) 
+  knitr::asis_output(format_html(x,...))
+
+knit_print.ftable <-function(x,options,...)
+  knitr::asis_output(
+    format_html(x,
+                digits=if(length(options$ftable.digits))
+                          options$ftable.digits
+                       else 0,
+                ...))
+# We can now adjust the number of digits after the comma
+# for each column e.g. by adding an `ftable.digits` option
+# to an R chunk, as in ```{r,ftable=c(2,2,0)}
+
+knit_print.mtable <-function(x,...)
+  knitr::asis_output(format_html(x,...))
+
+```
+```{r}
+library(memisc)
+options(digits=3)
+nes1948 <-spss.portable.file("./nes1948.por")
+print(nes1948)
+names(nes1948)
+```
+```{r}
+description(nes1948)
+codebook(nes1948)
+```
+```{r}
+vote.48 <- subset(nes1948,
+                  select=c(
+                    vote           = v480018,
+                    occupation.hh  = v480029,
+                    unionized.hh   = v480030,
+                    gender         = v480045,
+                    race           = v480046,
+                    age            = v480047,
+                    education      = v480048,
+                    total.income   = v480049,
+                    religious.pref = v480050
+                  ))
+str(vote.48)
+```
+```{r}
+codebook(vote.48)
+```
+```{r}
+vote.48 <- within(vote.48,{
+  vote3 <- recode(vote,
+    1 -> "Truman",
+    2 -> "Dewey",
+    3:4 -> "Other"
+    )
+  occup4 <- recode(occupation.hh,
+    10:20 -> "Upper white collar",
+    30 -> "Other white collar",
+    40:70 -> "Blue collar",
+    80 -> "Farmer"
+    )
+  relig3 <- recode(religious.pref,
+    1 -> "Protestant",
+    2 -> "Catholic",
+    3:5 -> "Other,none"
+    )
+   race2 <- recode(race,
+    1 -> "White",
+    2 -> "Black"
+    )
+  })
+ftable(xtabs(~vote3+occup4,data=vote.48))
+```
+May be better to use percentages.
+```{r}
+gt1 <- genTable(percent(vote3)~occup4,data=vote.48)
+ftable(gt1,row.vars = 2)
+```
+
+Religion?
+```{r}
+gt2 <- genTable(percent(vote3)~relig3,data=vote.48)
+ftable(gt2,row.vars=2)
+```
+
+Race?
+```{r}
+gt3 <- genTable(percent(vote3)~race2,data=vote.48)
+ftable(gt3,row.vars=2)
+```
+Income?
+
+```{r}
+gt4 <- genTable(percent(vote3)~total.income,data=vote.48)
+ftable(gt4,row.vars=2)
+```
+

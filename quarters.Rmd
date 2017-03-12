@@ -1,109 +1,182 @@
 ---
-title: "quarterlyRentData"
+title: "Protests slowed home price appreciation"
 output: 
  pdf_document: 
     keep_tex: yes
     latex_engine: xelatex
 ---
-Q1. How many quarters are we talking about?
-
-A1. 47
-
-Q2. What q were the protests?  = June 2011, = btw q2 and q3
-
-A2. 2011q2 = 23rd quarter
+# Were the protests
+an inflection point for home prices?
+In our meeting of Jan 1, 2017 we spent some time discussing this point,
+I don't know how/if/where I can incorporate this into the proposal, but I
+would like to share the results with you. As discussed, I find that prices
+are still rising, but rising more slowly post-protest.
+Visually, we graph home prices in all regions, as well as the national average, with a vertical black line at the June 2011 protests. There are
+five years before the protests and 5 and 1/2 years post-protest. 
+We are checking if the slope of the lines is indeed less-steep after the protests. We find that in the "Center and Jerusalem Periphery" and "Northern" regions, prices actually accelerated post-protest. In all other regions they still rose, but rose at a slower rate than they had before the protests.
+Thus, the protests did demarcate an inflection point for housing prices. 
+We then present these changes in tabular format.
 ```{r, cache=TRUE, include=FALSE}
 library(censusFunctions)
 library(ggplot2)
-library(pander)
+#library(pander)
 library(scales)
 source("./includes/getHousePrices.R", echo=FALSE)
 source("./includes/importPrices.R",   echo=FALSE)
 source("./includes/getGDP.R",         echo=FALSE)
 source("./includes/graphGDPhouseholdConsumption.R",echo=FALSE)
-
 source("./includes/groupHouseSize.R",echo=FALSE)
 
 ```
-```{r}
+```{r,eval=FALSE, include=FALSE}
 (p1.5$quarter)[1]  ## 2006
 (p1.5$quarter)[47] ## 2016.5
 (p1.5$quarter)[23]
      
      
 ```
-Quarters 1-23, 2006q1 to 2011q2 are pre-protest.
-Quarters 24-47, 2011q3 to 2016q2 are post-protest.
+```{r,include=FALSE}
+require(ggplot2)
+plot1.5rooms<-ggplot(data=p1.5,aes(x=quarter,
+                     y=value,
+                     group=variable
+                     ))+geom_line(aes(colour=variable))+
+                     ggtitle("Average P. 1.5-2.5 bedroom home:2006-2016q2")+theme(legend.title=element_blank(),
+                   panel.grid.major.y = element_blank(),
+                   panel.grid.minor = element_blank(),
+                   axis.ticks.x = element_blank(),
+                   axis.text.x=element_blank())+ ylab("NIS x 100k")+geom_vline(xintercept=28)
+```
+```{r}
+plot1.5rooms
+```
+
+Quarters 1-23, 2006q1 to 2011q2 are pre-protest. (5.5 years)
+Quarters 24-47, 2011q3 to 2016q2 are post-protest. (5 years)
 
 # Find the average yearly change in housing prices for each region in the 
 pre- and post- protest environment.
 
-Formula:
-[Pq23 - Pq1 / 6.75 (# of years)] * 100%
-```{r}
+```{r, cache=TRUE, include=FALSE}
+require (scales)
+## Haifa "h"
 dh = Haifa1.5$value[23] - Haifa1.5$value[1]  ## 90.6 k NIS increase over T
 ph = dh/Haifa1.5$value[1] ## 31% increase over T
-yh = percent(ph / 6.75)        ## yearly increase
-
-dn = national1.5$value[23] - national1.5$value[1]  ## 90.6 k NIS increase over T
-pn = dh/national1.5$value[1] ## 31% increase over T
-yn = percent(ph / 6.75)        ## yearly increase
-
-dc = centerJeruPeri1.5$value[23] - centerJeruPeri1.5$value[1]  ## 90.6 k NIS increase over T
-pc = dh/centerJeruPeri1.5$value[1] ## 31% increase over T
-yc = percent(ph / 6.75)        ## yearly increase
-
-dd = GushDan1.5$value[23] - GushDan1.5$value[1]  ## 90.6 k NIS increase over T
-pd = dh/GushDan1.5$value[1] ## 31% increase over T
-yd = percent(ph / 6.75)        ## yearly increase
-
-dj = Jerusalem1.5$value[23] - Jerusalem1.5$value[1]  ## 90.6 k NIS increase over T
-pj = dh/Jerusalem1.5$value[1] ## 31% increase over T
-yj = percent(ph / 6.75)        ## yearly increase
-
-ds = South1.5$value[23] - South1.5$value[1]  ## 90.6 k NIS increase over T
-ps = dh/South1.5$value[1] ## 31% increase over T
-ys = percent(ph / 6.75)        ## yearly increase
-
-dn = North1.5$value[23] - North1.5$value[1]  ## 90.6 k NIS increase over T
-pn = dh/North1.5$value[1] ## 31% increase over T
-yn = percent(ph / 6.75)        ## yearly increase
-
-dq = qrayotHaifa1.5$value[23] - qrayotHaifa1.5$value[1]  ## 90.6 k NIS increase over T
-pq = dh/qrayotHaifa1.5$value[1] ## 31% increase over T
-yq = percent(ph / 6.75)        ## yearly increase
-
-ds = Sharon1.5$value[23] - Sharon1.5$value[1]  ## 90.6 k NIS increase over T
-ps = dh/Sharon1.5$value[1] ## 31% increase over T
-ys = percent(ph / 6.75)        ## yearly increase
-
-dt = tlv1.5$value[23] - tlv1.5$value[1]  ## 90.6 k NIS increase over T
-pt = dh/tlv1.5$value[1] ## 31% increase over T
-yt = percent(ph / 6.75)        ## yearly increase
-```
-```{r}
-shortNames = c("national","centerJeruPeri","GushDan","Haifa","Jerusalem",
+yh = percent(ph / 5.5)        ## yearly increase
+dh_post = Haifa1.5$value[47]-Haifa1.5$value[24]
+ph_post = dh/Haifa1.5$value[24]
+yh_post = percent(ph_post / 5)
+yhN =ph/5.5
+yhN_post=ph_post/5
+## National Average "n"
+dn = national1.5$value[23] - national1.5$value[1]
+pn = dn/national1.5$value[1] 
+yn = percent(pn / 5.5)
+dn_post = national1.5$value[47]-national1.5$value[24]
+pn_post = dn_post /national1.5$value[24]
+yn_post = percent(ph_post / 5)
+ynN = pn/5.5
+ynN_post = pn_post/5
+## Center "c"
+dc = centerJeruPeri1.5$value[23] - centerJeruPeri1.5$value[1]  
+pc = dh/centerJeruPeri1.5$value[1] 
+yc = percent(pc / 5.5)        
+dc_post = centerJeruPeri1.5$value[47]-centerJeruPeri1.5$value[24]
+pc_post = dc/centerJeruPeri1.5$value[24]
+yc_post = percent(pc_post / 5)
+ycN = pc/5.5
+ycN_post = pc_post/5
+## Gush Dan "d"
+dd = GushDan1.5$value[23] - GushDan1.5$value[1]  
+pd = dh/GushDan1.5$value[1] 
+yd = percent(pd / 5.5)        ## yearly increase
+dd_post = GushDan1.5$value[47]-GushDan1.5$value[24]
+pd_post = dh/GushDan1.5$value[24]
+yd_post = percent(pd_post / 5)
+ydN = pd/5.5
+ydN_post = pd_post/5
+## Jerusalem "j"
+dj = Jerusalem1.5$value[23] - Jerusalem1.5$value[1]  
+pj = dh/Jerusalem1.5$value[1] 
+yj = percent(pj / 5.5)        ## yearly increase
+dj_post = Jerusalem1.5$value[47]-Jerusalem1.5$value[24]
+pj_post = dh/Jerusalem1.5$value[24]
+yj_post = percent(pj_post / 5)
+yjN = pj/5.5
+yjN_post = pj_post/5
+## South "s"
+ds = South1.5$value[23] - South1.5$value[1] 
+ps = dh/South1.5$value[1] 
+ys = percent(ps / 5.5)        ## yearly increase
+ds_post = South1.5$value[47]-South1.5$value[24]
+ps_post = dh/South1.5$value[24]
+ys_post = percent(ps_post / 5)
+ysN = ps/5.5
+ysN_post = ps_post/5
+## North  "no"
+dno = North1.5$value[23] - North1.5$value[1]  
+pno = dno/North1.5$value[1] 
+yno = percent(pno / 5.5)        ## yearly increase
+dno_post = North1.5$value[47]-North1.5$value[24]
+pno_post = dno_post/North1.5$value[24]
+yno_post = percent(pn_post / 5)
+ynoN = pno/5.5
+ynoN_post = pno_post/5
+## Haifa Suburbs    "q"
+dq = qrayotHaifa1.5$value[23] - qrayotHaifa1.5$value[1]  
+pq = dh/qrayotHaifa1.5$value[1] 
+yq = percent(pq / 5.5)        ## yearly increase
+dq_post = qrayotHaifa1.5$value[47]-qrayotHaifa1.5$value[24]
+pq_post = dh/qrayotHaifa1.5$value[24]
+yq_post = percent(pq_post / 5)
+yqN = pq/5.5
+yqN_post = pq_post/5
+## Sharon "sh"
+dsh = Sharon1.5$value[23] - Sharon1.5$value[1] 
+psh = dh/Sharon1.5$value[1] 
+ysh = percent(psh / 5.5)        ## yearly increase
+dsh_post = Sharon1.5$value[47]-Sharon1.5$value[24]
+psh_post = dh/Sharon1.5$value[24]
+ysh_post = percent(psh_post / 5)
+yshN = psh/5.5
+yshN_post = psh_post/5
+## Tel-Aviv "t"
+dt = tlv1.5$value[23] - tlv1.5$value[1]
+pt = dh/tlv1.5$value[1] 
+yt = percent(pt / 5.5)        ## yearly increase before the protests
+dt_post = tlv1.5$value[47]-tlv1.5$value[24]
+pt_post = dh/tlv1.5$value[24]
+yt_post = percent(pt_post / 5)
+ytN = pt/5.5
+ytN_post = pt_post/5
+####
+Regions = c("national","centerJeruPeri","GushDan","Haifa","Jerusalem",
                "South","North","qrayotHaifa","Sharon","tlv")
-
-shortNames
-
-#typeof(Haifa1.5)
-#as.data.frame(Haifa1.5)
-#super1.5 = as.data.frame(c(national1.5,centerJeruPeri1.5,GushDan1.5))
-
+beforeProtests <-c(yn,yc,yd,yh,yj,ys,yno,yq,ysh,yt)
+afterProtests <-c(yn_post,yc_post,yd_post,yh_post,
+                  yj_post,ys_post,yno_post,yq_post,
+                  ysh_post, yt_post)
+change <-c("(4.35%)",
+              "5.52%",
+              ("(1.52%)"),
+              "(1.13%)",
+           "(0.86%)",
+           "(2.83%)",
+           "2.92%",
+           "(0.55)%",
+           "(0.35%)",
+           "(0.87%)"
+              )
+m <- cbind(Regions,beforeProtests,afterProtests, change)
 ```
-another section
-```{r table-simple, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
-panderOptions('table.split.table', Inf)
-set.caption("Did protests cool housing market?")
-my.data <- " # what did housing prices do??
-  Region        | Pre-Protest           | Post-Protest
-  col 3 is      |  #$yt | $1600 
-  col 2 is      | centered      |   $12 
-  zebra stripes | are neat      |    $1"
-df <- read.delim(textConnection(my.data),header=FALSE,sep="|",strip.white=TRUE,stringsAsFactors=FALSE)
-names(df) <- unname(as.list(df[1,])) # put headers on
-df <- df[-1,] # remove first row
-row.names(df)<-NULL
-pander(df, style = 'rmarkdown')
+
+Most regions, and the national average experienced a slow-down
+in housing price growth after the summer 2011 protests. Yearly average price appreciation is shown for homes of 1.5-2.5 rooms. The 
+before protests period is q1 2006 to q2 2011.  The after protests period is q3 2011 to q2 2016.
+
+The "Northern Region", and the "Center and Jerusalem Periphery
+Region" went against this trend, price appreciation in these two regions actually accelerated post-protest. 
+```{r}
+m
 ```
+
