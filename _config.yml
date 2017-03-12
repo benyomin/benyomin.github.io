@@ -10,20 +10,21 @@
 title: test
 abstract: this is so slow
 
-# This controls which file is shown on the right-hand side of the published
 # HTML page.  By default it will take the first PDF or HTML file that it
 # finds.  If that doesn't work for you, you can specify the correct file here.
 #iframe_src: book.pdf
-
+#
+# updating with the submitted proposal March 12, 2017
+#
 # You can specify multiple authors, just follow the pattern below.
 # These fields can contain HTML tags.  You probably want to put <br />
 # in the address somewhere, indicating a line break.
 
 authors:
-- name: Joseph H. Bloggs
-  address: International Institute for Interminable Examples, P.O. Box 1,<br />Beverly Hills, CA 90210, USA.
+- name: Brandon Payne
+  address: Ben-Gurion Research Institute, Sde. Boker, Israel
 #- name: Clara McNarma
 #  address: School of Dance and Drama,<br />College of the Northern Light,<br />Dogger, Fisher, German Bight.
 github_username: benyomin
 github_repo: benyomin
-iframe_src: currentWorkingDraft.pdf
+iframe_src: proposalSubmitted.pdf
