@@ -1,4 +1,8 @@
 * Readme.org
+** don't touch me!
+I'm actually working at the moment.  It seems that the automatic Travis compilation
+isn't doing anything at the moment. Check which commit adds this line to find out 
+which change actually changes the displayed pdf.
 ** Thesis template:
 *** Reed is in development, may have good M$ Word export soon
 https://github.com/ismayc/thesisdown
