@@ -1,8 +1,8 @@
 Package: thesisProposal
 Type: Package
 Title: HousingWealthEffect
-Version: 0.2.8
-Date: 2016-12-04
+Version: 0.53
+Date: 2017-March
 Author: Benyomin 
 Description: Housing Wealth Effect reproducible research.
 License: BSD_2_clause + file LICENSE

@@ -1,4 +1,4 @@
-## version 0.8b3
+## version 0.9 - change to submitted proposal
 install.packages("devtools")
 source("./includes/install_if_needed.R",echo=FALSE)
 install_if_needed("devtools")
@@ -18,6 +18,7 @@ library(rmarkdown)
 install_if_needed("bookdown")
 library(bookdown)
 library(knitr)
+devtools::install_github("ismayc/thesisdown")
 source("./includes/updatePackage.R",echo=FALSE)
-file.copy(from='working.Dec7.Rmd',to='currentWorkingDraft.Rmd',overwrite=TRUE)
+file.copy(from='working.March.Rmd',to='currentWorkingDraft.Rmd',overwrite=TRUE)
 rmarkdown::render('currentWorkingDraft.Rmd')
