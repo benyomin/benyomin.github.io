@@ -1,4 +1,6 @@
 * Readme.org
+** the ghpages branch makes the webpage?
+** the master  branch contains the submitted proposal
 ** this is not sourced on github, that file is README.md
 ** TODO make the .md from this .org using pandoc on travis (priority: very low)
 ** this directory is stored on github.com/benyomin/workingDec
