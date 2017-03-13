@@ -1,5 +1,5 @@
 ---
-title: "Calculating the Housing Wealth Effect of Israeli regional cohorts"
+title: "Can you see this change: Housing Wealth Effect of Israeli regional cohorts"
 author: "Brandon Payne"
 fontsize: 12pt
 papersize: a4

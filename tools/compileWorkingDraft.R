@@ -1,9 +1,10 @@
-## version 0.8b3
+## version 0.9
+#  transitioning from proposal to thesisdown package
 #install.packages("devtools")
 source("./includes/install_if_needed.R",echo=FALSE)
 install_if_needed("devtools")
 library(devtools)
-#install_github("benyomin/censusFunctions")
+install_github("benyomin/censusFunctions")
 library(censusFunctions)
 ##loadWealthEffectPackages()
 install_if_needed("knitr")
@@ -16,6 +17,8 @@ install_if_needed("xlsx")
 library(xlsx)
 library(rmarkdown)
 install_if_needed("bookdown")
+#install_if_needed("thesisdown")
+devtools::install_github("ismayc/thesisdown")
 library(bookdown)
 library(knitr)
 #source("./includes/updatePackage.R",echo=FALSE)
