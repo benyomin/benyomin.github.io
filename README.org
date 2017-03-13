@@ -41,6 +41,8 @@ http://databank.worldbank.org/data/reports.aspx?ReportId=46991
 click "Download Options" "csv"
 
 * changelog
+** 1.5.3 - use marchDraft ; fix Hmisc dependency (survival > 0.4) 
+-----------------------------
 ** 1.3.7 - actually compiled once, adding local copy of savesym.sty, apt-get installs a very old version of tex-live, I'm using a newer from a .deb, but there is a problem with installing packages on the fly that are declared with \require{package} in a .tex file
 ** 1.3.9 - works, except for text below H3, which overflows the margins, possible I commented out the H3 definition. Will make section H2 without a subheading for workaround.
 ** 1.4   - script to download Carlito font and install to tex-live distribution

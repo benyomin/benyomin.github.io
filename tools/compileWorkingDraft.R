@@ -1,7 +1,7 @@
 ## version 0.9
 #  transitioning from proposal to thesisdown package
 #install.packages("devtools")
-source("./includes/install_if_needed.R",echo=FALSE)
+source("./includes/install_if_needed.R", echo=FALSE)
 install_if_needed("devtools")
 library(devtools)
 install_github("benyomin/censusFunctions")
@@ -23,6 +23,6 @@ library(bookdown)
 library(knitr)
 #source("./includes/updatePackage.R",echo=FALSE)
 #file.copy(from='kislevDraft.Rmd',to='currentWorkingDraft.Rmd',overwrite=TRUE)
-file.copy(from='febDraft.Rmd',to='currentWorkingDraft.Rmd',overwrite=TRUE)
+file.copy(from='marchDraft.Rmd',to='currentWorkingDraft.Rmd',overwrite=TRUE)
 rmarkdown::render('currentWorkingDraft.Rmd')
 file.rename(from='currentWorkingDraft.pdf', to='./proofs/workingDraft.pdf')
